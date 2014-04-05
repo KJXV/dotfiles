@@ -1,0 +1,25 @@
+﻿added zsh
+# Please enter the commit message for your changes. Lines starting
+# with '#' will be ignored, and an empty message aborts the commit.
+# On branch master
+# Your branch is ahead of 'origin/master' by 1 commit.
+#   (use "git push" to publish your local commits)
+#
+# Changes to be committed:
+#   (use "git reset HEAD <file>..." to unstage)
+#
+#	new file:   .conkyrc
+#	new file:   .oh-my-zsh
+#	new file:   .profile
+#	new file:   .zshrc
+#
+# Changes not staged for commit:
+#   (use "git add <file>..." to update what will be committed)
+#   (use "git checkout -- <file>..." to discard changes in working directory)
+#   (commit or discard the untracked or modified content in submodules)
+#
+#	modified:   .oh-my-zsh (modified content)
+#	modified:   .vim/bundle/Command-T (modified content)
+#	modified:   .vim/bundle/syntastic (modified content)
+#
+
