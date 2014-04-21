@@ -3,24 +3,32 @@
 # Please see http://i3wm.org/docs/userguide.html for a complete reference.
 
 # Variables
-set $mod Mod4 # Super (Win) Key modifier
-set $term terminator
+set $mod Mod4
+set $term urxvt
+
+# xfwm4
+for_window [class="Xfce4-notifyd"] floating enable;border none; focus mode_toggle
 
 # The --no-startup-id parameter disables startup-notification support for this
 # particular exec command. With startup-notification, i3 can make sure that a window
 # appears on the workspace on which you used the exec command. Also, it will change
 # the X11 cursor to watch (a clock) while the application is launching. So, if an
 # application is not startup-notification aware (most GTK and Qt using applications
-# seem to be, though), you will end up with a watch cursor for 60 seconds.\
+# seem to be, though), you will end up with a watch cursor for 60 seconds.
 #
 # exec [--no-startup-id] <command>
 
 # Autostart
-exec ~/.i3/scripts/autostart.sh
+exec --no-startup-id ~/.i3/scripts/autostart.sh
 
 # Program key-bindings
-bindsym $mod+Return exec --no-startup-id $term # Terminal
-bindsym $mod+d exec dmenu_run # dmenu
+bindsym $mod+Return exec --no-startup-id $term
+bindsym $mod+e exec --no-startup-id "urxvtc -e alsamixer"
+bindsym $mod+d exec --no-startup-id dmenu_run
+# There also is the (new) i3-dmenu-desktop which only displays applications
+# shipping a .desktop file. It is a wrapper around dmenu, so you need that
+# installed.
+# bindsym $mod+d exec --no-startup-id i3-dmenu-desktop
 
 # Font for window titles
 #
@@ -46,7 +54,7 @@ client.urgent            #2f343a  #900000     #ffffff  #900000
 floating_modifier $mod
 
 # Kill focused window
-bindsym $mod+k
+bindsym $mod+Shift+k kill
 
 # Dvorak-Vim-style change-focus keys
 bindsym $mod+h focus left
@@ -55,17 +63,19 @@ bindsym $mod+n focus up
 bindsym $mod+s focus right
 
 # Move focused window
-bindsym $mod+Shift+H focus left
-bindsym $mod+Shift+T focus down
-bindsym $mod+Shift+N focus up
-bindsym $mod+Shift+S focus right
+bindsym $mod+Shift+h focus left
+bindsym $mod+Shift+t focus down
+bindsym $mod+Shift+n focus up
+bindsym $mod+Shift+s focus right
 
 # Split orientation
-bindsym $mod+z # Horizontal
-bindsym $mod+v # Vertical
+# Horizontal
+bindsym $mod+z split h
+# Vertical
+bindsym $mod+v split v
 
 # Enter fullscreen mode for the focused container
-bindsym $mod+f
+bindsym $mod+f fullscreen
 
 # Change the container layout (stacked, tabbed, default)
 bindsym $mod+apostrophe layout stacking
@@ -76,13 +86,13 @@ bindsym $mod+period layout default
 bindsym $mod+Shift+space floating toggle
 
 # Change focus between tiling / floating windows
-bindsym $mod+space focus  mode_toggle
+bindsym $mod+space focus mode_toggle
 
 # Focus on parent container
 bindsym $mod+a focus parent
 
 # Focus on child window
-bindsym $mod+o
+bindsym $mod+o focus child
 
 # Workspace switching
 bindsym $mod+1 workspace 1
@@ -97,16 +107,26 @@ bindsym $mod+9 workspace 9
 bindsym $mod+0 workspace 10
 
 # Move focused container to worspace
-bindsym $mod+Shift+exclam move container to workspace 1
-bindsym $mod+Shift+at move container to workspace 2
-bindsym $mod+Shift+numbersign move container to workspace 3
-bindsym $mod+Shift+dollar move container to workspace 4
-bindsym $mod+Shift+percent move container to workspace 5
-bindsym $mod+Shift+asciicircum move container to workspace 6
-bindsym $mod+Shift+ampersand move container to workspace 7
-bindsym $mod+Shift+asterisk move container to workspace 8
-bindsym $mod+Shift+parenleft move container to workspace 9
-bindsym $mod+Shift+parenright move container to workspace 10
+bindsym $mod+Shift+1 move container to workspace 1
+bindsym $mod+Shift+2 move container to workspace 2
+bindsym $mod+Shift+3 move container to workspace 3
+bindsym $mod+Shift+4 move container to workspace 4
+bindsym $mod+Shift+5 move container to workspace 5
+bindsym $mod+Shift+6 move container to workspace 6
+bindsym $mod+Shift+7 move container to workspace 7
+bindsym $mod+Shift+8 move container to workspace 8
+bindsym $mod+Shift+9 move container to workspace 9
+bindsym $mod+Shift+0 move container to workspace 10
+#bindsym $mod+Shift+exclam move container to workspace 1
+#bindsym $mod+Shift+at move container to workspace 2
+#bindsym $mod+Shift+numbersign move container to workspace 3
+#bindsym $mod+Shift+dollar move container to workspace 4
+#bindsym $mod+Shift+percent move container to workspace 5
+#bindsym $mod+Shift+asciicircum move container to workspace 6
+#bindsym $mod+Shift+ampersand move container to workspace 7
+#bindsym $mod+Shift+asterisk move container to workspace 8
+#bindsym $mod+Shift+parenleft move container to workspace 9
+#bindsym $mod+Shift+parenright move container to workspace 10
 
 # Reload this config file
 bindsym $mod+Shift+J reload
@@ -116,6 +136,8 @@ bindsym $mod+Shift+J reload
 bindsym $mod+Shift+R restart
 
 # Exit i3 (logs out of current X session)
+# remap the exit command to properly exit Xfce
+bindsym $mod+Shift+X exec xfce4-session-logout
 bindsym $mod+Shift+Q exit
 
 # Resize focused window
