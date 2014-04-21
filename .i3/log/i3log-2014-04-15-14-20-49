@@ -1,0 +1,779 @@
+04/15/2014 02:20:49 PM - Enabling debug logging
+04/15/2014 02:20:49 PM - i3 4.6 (2013-08-07, branch "tags/4.6") starting
+04/15/2014 02:20:49 PM - main.c:main:531 - root_depth = 24, visual_id = 0x00000021.
+04/15/2014 02:20:49 PM - Parsing configfile /home/kj/.i3/config
+04/15/2014 02:20:49 PM - config_parser.c:parse_file:963 - Got new variable $mod = Mod4
+04/15/2014 02:20:49 PM - config_parser.c:parse_file:963 - Got new variable $term = urxvt
+deciding for version 4 due to this line: # i3 config file (v4)
+04/15/2014 02:20:49 PM - config_parser.c:parse_config:315 - CONFIG(line   1): # i3 config file (v4)
+04/15/2014 02:20:49 PM - config_parser.c:parse_config:315 - CONFIG(line   2): #
+04/15/2014 02:20:49 PM - config_parser.c:parse_config:315 - CONFIG(line   3): # Please see http://i3wm.org/docs/userguide.html for a complete reference.
+04/15/2014 02:20:49 PM - config_parser.c:parse_config:315 - CONFIG(line   4): 
+04/15/2014 02:20:49 PM - config_parser.c:parse_config:315 - CONFIG(line   5): # Variables
+04/15/2014 02:20:49 PM - config_parser.c:parse_config:315 - CONFIG(line   6): set Mod4 Mod4
+04/15/2014 02:20:49 PM - config_parser.c:parse_config:315 - CONFIG(line   7): set urxvt urxvt
+04/15/2014 02:20:49 PM - config_parser.c:parse_config:315 - CONFIG(line   8): 
+04/15/2014 02:20:49 PM - config_parser.c:parse_config:315 - CONFIG(line   9): # The --no-startup-id parameter disables startup-notification support for this
+04/15/2014 02:20:49 PM - config_parser.c:parse_config:315 - CONFIG(line  10): # particular exec command. With startup-notification, i3 can make sure that a window
+04/15/2014 02:20:49 PM - config_parser.c:parse_config:315 - CONFIG(line  11): # appears on the workspace on which you used the exec command. Also, it will change
+04/15/2014 02:20:49 PM - config_parser.c:parse_config:315 - CONFIG(line  12): # the X11 cursor to watch (a clock) while the application is launching. So, if an
+04/15/2014 02:20:49 PM - config_parser.c:parse_config:315 - CONFIG(line  13): # application is not startup-notification aware (most GTK and Qt using applications
+04/15/2014 02:20:49 PM - config_parser.c:parse_config:315 - CONFIG(line  14): # seem to be, though), you will end up with a watch cursor for 60 seconds.
+04/15/2014 02:20:49 PM - config_parser.c:parse_config:315 - CONFIG(line  15): #
+04/15/2014 02:20:49 PM - config_parser.c:parse_config:315 - CONFIG(line  16): # exec [--no-startup-id] <command>
+04/15/2014 02:20:49 PM - config_parser.c:parse_config:315 - CONFIG(line  17): 
+04/15/2014 02:20:49 PM - config_parser.c:parse_config:315 - CONFIG(line  18): # Autostart
+04/15/2014 02:20:49 PM - config_parser.c:parse_config:315 - CONFIG(line  19): exec --no-startup-id ~/.i3/scripts/autostart.sh
+04/15/2014 02:20:49 PM - config_parser.c:parse_config:315 - CONFIG(line  20): 
+04/15/2014 02:20:49 PM - config_parser.c:parse_config:315 - CONFIG(line  21): # Program key-bindings
+04/15/2014 02:20:49 PM - config_parser.c:parse_config:315 - CONFIG(line  22): bindsym Mod4+Return exec --no-startup-id urxvt
+04/15/2014 02:20:49 PM - config_parser.c:parse_config:315 - CONFIG(line  23): 
+04/15/2014 02:20:49 PM - config_parser.c:parse_config:315 - CONFIG(line  24): bindsym Mod4+d exec -no-startup-id dmenu_run
+04/15/2014 02:20:49 PM - config_parser.c:parse_config:315 - CONFIG(line  25): # There also is the (new) i3-dmenu-desktop which only displays applications
+04/15/2014 02:20:49 PM - config_parser.c:parse_config:315 - CONFIG(line  26): # shipping a .desktop file. It is a wrapper around dmenu, so you need that
+04/15/2014 02:20:49 PM - config_parser.c:parse_config:315 - CONFIG(line  27): # installed.
+04/15/2014 02:20:49 PM - config_parser.c:parse_config:315 - CONFIG(line  28): # bindsym Mod4+d exec --no-startup-id i3-dmenu-desktop
+04/15/2014 02:20:49 PM - config_parser.c:parse_config:315 - CONFIG(line  29): 
+04/15/2014 02:20:49 PM - config_parser.c:parse_config:315 - CONFIG(line  30): # Font for window titles
+04/15/2014 02:20:49 PM - config_parser.c:parse_config:315 - CONFIG(line  31): #
+04/15/2014 02:20:49 PM - config_parser.c:parse_config:315 - CONFIG(line  32): # font <X core font description>
+04/15/2014 02:20:49 PM - config_parser.c:parse_config:315 - CONFIG(line  33): # font pango:[family list] [style options] [size]
+04/15/2014 02:20:49 PM - config_parser.c:parse_config:315 - CONFIG(line  34): font xft:Terminus 9.5
+04/15/2014 02:20:49 PM - config_parser.c:parse_config:315 - CONFIG(line  35): 
+04/15/2014 02:20:49 PM - config_parser.c:parse_config:315 - CONFIG(line  36): # Mouse can't interact with inactive/unfocused windows.
+04/15/2014 02:20:49 PM - config_parser.c:parse_config:315 - CONFIG(line  37): # This is useful if you're on a laptop, doing a presentation,
+04/15/2014 02:20:49 PM - config_parser.c:parse_config:315 - CONFIG(line  38): # or anything else where a wandering mouse could interfere.
+04/15/2014 02:20:49 PM - config_parser.c:parse_config:315 - CONFIG(line  39): #
+04/15/2014 02:20:49 PM - config_parser.c:parse_config:315 - CONFIG(line  40): # focus_follows mouse <yes|no>
+04/15/2014 02:20:49 PM - config_parser.c:parse_config:315 - CONFIG(line  41): focus_follows_mouse no
+04/15/2014 02:20:49 PM - config_parser.c:parse_config:315 - CONFIG(line  42): 
+04/15/2014 02:20:49 PM - config_parser.c:parse_config:315 - CONFIG(line  43): # Color scheme
+04/15/2014 02:20:49 PM - config_parser.c:parse_config:315 - CONFIG(line  44): # class                  border   background  text     indicator
+04/15/2014 02:20:49 PM - config_parser.c:parse_config:315 - CONFIG(line  45): client.focused           #282d76  #181b46     #ffffff  #3d4283
+04/15/2014 02:20:49 PM - config_parser.c:parse_config:315 - CONFIG(line  46): client.focused_inactive  #333333  #5f676a     #ffffff  #484e50
+04/15/2014 02:20:49 PM - config_parser.c:parse_config:315 - CONFIG(line  47): client.unfocused         #333333  #222222     #888888  #292d2e
+04/15/2014 02:20:49 PM - config_parser.c:parse_config:315 - CONFIG(line  48): client.urgent            #2f343a  #900000     #ffffff  #900000
+04/15/2014 02:20:49 PM - config_parser.c:parse_config:315 - CONFIG(line  49): 
+04/15/2014 02:20:49 PM - config_parser.c:parse_config:315 - CONFIG(line  50): # Use Mouse+Mod4 to drag floating windows to their desired position.
+04/15/2014 02:20:49 PM - config_parser.c:parse_config:315 - CONFIG(line  51): floating_modifier Mod4
+04/15/2014 02:20:49 PM - config_parser.c:parse_config:315 - CONFIG(line  52): 
+04/15/2014 02:20:49 PM - config_parser.c:parse_config:315 - CONFIG(line  53): # Kill focused window
+04/15/2014 02:20:49 PM - config_parser.c:parse_config:315 - CONFIG(line  54): bindsym Mod4+k
+04/15/2014 02:20:49 PM - config_parser.c:parse_config:315 - CONFIG(line  55): 
+04/15/2014 02:20:49 PM - config_parser.c:parse_config:315 - CONFIG(line  56): # Dvorak-Vim-style change-focus keys
+04/15/2014 02:20:49 PM - config_parser.c:parse_config:315 - CONFIG(line  57): bindsym Mod4+h focus left
+04/15/2014 02:20:49 PM - config_parser.c:parse_config:315 - CONFIG(line  58): bindsym Mod4+t focus down
+04/15/2014 02:20:49 PM - config_parser.c:parse_config:315 - CONFIG(line  59): bindsym Mod4+n focus up
+04/15/2014 02:20:49 PM - config_parser.c:parse_config:315 - CONFIG(line  60): bindsym Mod4+s focus right
+04/15/2014 02:20:49 PM - config_parser.c:parse_config:315 - CONFIG(line  61): 
+04/15/2014 02:20:49 PM - config_parser.c:parse_config:315 - CONFIG(line  62): # Move focused window
+04/15/2014 02:20:49 PM - config_parser.c:parse_config:315 - CONFIG(line  63): bindsym Mod4+Shift+H focus left
+04/15/2014 02:20:49 PM - config_parser.c:parse_config:315 - CONFIG(line  64): bindsym Mod4+Shift+T focus down
+04/15/2014 02:20:49 PM - config_parser.c:parse_config:315 - CONFIG(line  65): bindsym Mod4+Shift+N focus up
+04/15/2014 02:20:49 PM - config_parser.c:parse_config:315 - CONFIG(line  66): bindsym Mod4+Shift+S focus right
+04/15/2014 02:20:49 PM - config_parser.c:parse_config:315 - CONFIG(line  67): 
+04/15/2014 02:20:49 PM - config_parser.c:parse_config:315 - CONFIG(line  68): # Split orientation
+04/15/2014 02:20:49 PM - config_parser.c:parse_config:315 - CONFIG(line  69): # Horizontal
+04/15/2014 02:20:49 PM - config_parser.c:parse_config:315 - CONFIG(line  70): bindsym Mod4+z
+04/15/2014 02:20:49 PM - config_parser.c:parse_config:315 - CONFIG(line  71): # Vertical
+04/15/2014 02:20:49 PM - config_parser.c:parse_config:315 - CONFIG(line  72): bindsym Mod4+v
+04/15/2014 02:20:49 PM - config_parser.c:parse_config:315 - CONFIG(line  73): 
+04/15/2014 02:20:49 PM - config_parser.c:parse_config:315 - CONFIG(line  74): # Enter fullscreen mode for the focused container
+04/15/2014 02:20:49 PM - config_parser.c:parse_config:315 - CONFIG(line  75): bindsym Mod4+f
+04/15/2014 02:20:49 PM - config_parser.c:parse_config:315 - CONFIG(line  76): 
+04/15/2014 02:20:49 PM - config_parser.c:parse_config:315 - CONFIG(line  77): # Change the container layout (stacked, tabbed, default)
+04/15/2014 02:20:49 PM - config_parser.c:parse_config:315 - CONFIG(line  78): bindsym Mod4+apostrophe layout stacking
+04/15/2014 02:20:49 PM - config_parser.c:parse_config:315 - CONFIG(line  79): bindsym Mod4+comma layout tabbed
+04/15/2014 02:20:49 PM - config_parser.c:parse_config:315 - CONFIG(line  80): bindsym Mod4+period layout default
+04/15/2014 02:20:49 PM - config_parser.c:parse_config:315 - CONFIG(line  81): 
+04/15/2014 02:20:49 PM - config_parser.c:parse_config:315 - CONFIG(line  82): # Toggle tiling / floating containers
+04/15/2014 02:20:49 PM - config_parser.c:parse_config:315 - CONFIG(line  83): bindsym Mod4+Shift+space floating toggle
+04/15/2014 02:20:49 PM - config_parser.c:parse_config:315 - CONFIG(line  84): 
+04/15/2014 02:20:49 PM - config_parser.c:parse_config:315 - CONFIG(line  85): # Change focus between tiling / floating windows
+04/15/2014 02:20:49 PM - config_parser.c:parse_config:315 - CONFIG(line  86): bindsym Mod4+space focus  mode_toggle
+04/15/2014 02:20:49 PM - config_parser.c:parse_config:315 - CONFIG(line  87): 
+04/15/2014 02:20:49 PM - config_parser.c:parse_config:315 - CONFIG(line  88): # Focus on parent container
+04/15/2014 02:20:49 PM - config_parser.c:parse_config:315 - CONFIG(line  89): bindsym Mod4+a focus parent
+04/15/2014 02:20:49 PM - config_parser.c:parse_config:315 - CONFIG(line  90): 
+04/15/2014 02:20:49 PM - config_parser.c:parse_config:315 - CONFIG(line  91): # Focus on child window
+04/15/2014 02:20:49 PM - config_parser.c:parse_config:315 - CONFIG(line  92): bindsym Mod4+o
+04/15/2014 02:20:49 PM - config_parser.c:parse_config:315 - CONFIG(line  93): 
+04/15/2014 02:20:49 PM - config_parser.c:parse_config:315 - CONFIG(line  94): # Workspace switching
+04/15/2014 02:20:49 PM - config_parser.c:parse_config:315 - CONFIG(line  95): bindsym Mod4+1 workspace 1
+04/15/2014 02:20:49 PM - config_parser.c:parse_config:315 - CONFIG(line  96): bindsym Mod4+2 workspace 2
+04/15/2014 02:20:49 PM - config_parser.c:parse_config:315 - CONFIG(line  97): bindsym Mod4+3 workspace 3
+04/15/2014 02:20:49 PM - config_parser.c:parse_config:315 - CONFIG(line  98): bindsym Mod4+4 workspace 4
+04/15/2014 02:20:49 PM - config_parser.c:parse_config:315 - CONFIG(line  99): bindsym Mod4+5 workspace 5
+04/15/2014 02:20:49 PM - config_parser.c:parse_config:315 - CONFIG(line 100): bindsym Mod4+6 workspace 6
+04/15/2014 02:20:49 PM - config_parser.c:parse_config:315 - CONFIG(line 101): bindsym Mod4+7 workspace 7
+04/15/2014 02:20:49 PM - config_parser.c:parse_config:315 - CONFIG(line 102): bindsym Mod4+8 workspace 8
+04/15/2014 02:20:49 PM - config_parser.c:parse_config:315 - CONFIG(line 103): bindsym Mod4+9 workspace 9
+04/15/2014 02:20:49 PM - config_parser.c:parse_config:315 - CONFIG(line 104): bindsym Mod4+0 workspace 10
+04/15/2014 02:20:49 PM - config_parser.c:parse_config:315 - CONFIG(line 105): 
+04/15/2014 02:20:49 PM - config_parser.c:parse_config:315 - CONFIG(line 106): # Move focused container to worspace
+04/15/2014 02:20:49 PM - config_parser.c:parse_config:315 - CONFIG(line 107): bindsym Mod4+Shift+exclam move container to workspace 1
+04/15/2014 02:20:49 PM - config_parser.c:parse_config:315 - CONFIG(line 108): bindsym Mod4+Shift+at move container to workspace 2
+04/15/2014 02:20:49 PM - config_parser.c:parse_config:315 - CONFIG(line 109): bindsym Mod4+Shift+numbersign move container to workspace 3
+04/15/2014 02:20:49 PM - config_parser.c:parse_config:315 - CONFIG(line 110): bindsym Mod4+Shift+dollar move container to workspace 4
+04/15/2014 02:20:49 PM - config_parser.c:parse_config:315 - CONFIG(line 111): bindsym Mod4+Shift+percent move container to workspace 5
+04/15/2014 02:20:49 PM - config_parser.c:parse_config:315 - CONFIG(line 112): bindsym Mod4+Shift+asciicircum move container to workspace 6
+04/15/2014 02:20:49 PM - config_parser.c:parse_config:315 - CONFIG(line 113): bindsym Mod4+Shift+ampersand move container to workspace 7
+04/15/2014 02:20:49 PM - config_parser.c:parse_config:315 - CONFIG(line 114): bindsym Mod4+Shift+asterisk move container to workspace 8
+04/15/2014 02:20:49 PM - config_parser.c:parse_config:315 - CONFIG(line 115): bindsym Mod4+Shift+parenleft move container to workspace 9
+04/15/2014 02:20:49 PM - config_parser.c:parse_config:315 - CONFIG(line 116): bindsym Mod4+Shift+parenright move container to workspace 10
+04/15/2014 02:20:49 PM - config_parser.c:parse_config:315 - CONFIG(line 117): 
+04/15/2014 02:20:49 PM - config_parser.c:parse_config:315 - CONFIG(line 118): # Reload this config file
+04/15/2014 02:20:49 PM - config_parser.c:parse_config:315 - CONFIG(line 119): bindsym Mod4+Shift+J reload
+04/15/2014 02:20:49 PM - config_parser.c:parse_config:315 - CONFIG(line 120): 
+04/15/2014 02:20:49 PM - config_parser.c:parse_config:315 - CONFIG(line 121): # Restart i3 inplace (preserves containers/session)
+04/15/2014 02:20:49 PM - config_parser.c:parse_config:315 - CONFIG(line 122): # Useful for upgrades
+04/15/2014 02:20:49 PM - config_parser.c:parse_config:315 - CONFIG(line 123): bindsym Mod4+Shift+R restart
+04/15/2014 02:20:49 PM - config_parser.c:parse_config:315 - CONFIG(line 124): 
+04/15/2014 02:20:49 PM - config_parser.c:parse_config:315 - CONFIG(line 125): # Exit i3 (logs out of current X session)
+04/15/2014 02:20:49 PM - config_parser.c:parse_config:315 - CONFIG(line 126): bindsym Mod4+Shift+Q exit
+04/15/2014 02:20:49 PM - config_parser.c:parse_config:315 - CONFIG(line 127): 
+04/15/2014 02:20:49 PM - config_parser.c:parse_config:315 - CONFIG(line 128): # Resize focused window
+04/15/2014 02:20:49 PM - config_parser.c:parse_config:315 - CONFIG(line 129): mode "resize" {
+04/15/2014 02:20:49 PM - config_parser.c:parse_config:315 - CONFIG(line 130): 	# These bindings trigger when entering resize mode
+04/15/2014 02:20:49 PM - config_parser.c:parse_config:315 - CONFIG(line 131): 	
+04/15/2014 02:20:49 PM - config_parser.c:parse_config:315 - CONFIG(line 132): 	# Pressing left will shrink window's width.
+04/15/2014 02:20:49 PM - config_parser.c:parse_config:315 - CONFIG(line 133): 	# Pressing right will enlarge the window's width.
+04/15/2014 02:20:49 PM - config_parser.c:parse_config:315 - CONFIG(line 134): 	# Pressing up will shrink the window's height.
+04/15/2014 02:20:49 PM - config_parser.c:parse_config:315 - CONFIG(line 135): 	# Pressing down will enlarge the window's height.
+04/15/2014 02:20:49 PM - config_parser.c:parse_config:315 - CONFIG(line 136): 	
+04/15/2014 02:20:49 PM - config_parser.c:parse_config:315 - CONFIG(line 137): 	bindsym h resize shrink width 10 px or 10 ppt
+04/15/2014 02:20:49 PM - config_parser.c:parse_config:315 - CONFIG(line 138): 	bindsym s resive grow width 10 px or 10 ppt
+04/15/2014 02:20:49 PM - config_parser.c:parse_config:315 - CONFIG(line 139): 	bindsym t resize shrink height 10 px or 10 ppt
+04/15/2014 02:20:49 PM - config_parser.c:parse_config:315 - CONFIG(line 140): 	bindsym n resize grow height 10 px or 10 ppt
+04/15/2014 02:20:49 PM - config_parser.c:parse_config:315 - CONFIG(line 141): 	
+04/15/2014 02:20:49 PM - config_parser.c:parse_config:315 - CONFIG(line 142): 	# Escape exits into normal mode
+04/15/2014 02:20:49 PM - config_parser.c:parse_config:315 - CONFIG(line 143): 	bindsym Escape mode "default"
+04/15/2014 02:20:49 PM - config_parser.c:parse_config:315 - CONFIG(line 144): }
+04/15/2014 02:20:49 PM - config_parser.c:parse_config:315 - CONFIG(line 145): bindsym Mod4+r mode "resize"
+04/15/2014 02:20:49 PM - config_parser.c:parse_config:315 - CONFIG(line 146): 
+04/15/2014 02:20:49 PM - config_parser.c:parse_config:315 - CONFIG(line 147): ############
+04/15/2014 02:20:49 PM - config_parser.c:parse_config:315 - CONFIG(line 148): 
+04/15/2014 02:20:49 PM - config_parser.c:parse_config:315 - CONFIG(line 149): # i3bar config
+04/15/2014 02:20:49 PM - config_parser.c:parse_config:315 - CONFIG(line 150): #
+04/15/2014 02:20:49 PM - config_parser.c:parse_config:315 - CONFIG(line 151): # Please see http://i3wm.org/docs/userguide.html#_configuring_i3bar
+04/15/2014 02:20:49 PM - config_parser.c:parse_config:315 - CONFIG(line 152): # for a complete reference.
+04/15/2014 02:20:49 PM - config_parser.c:parse_config:315 - CONFIG(line 153): 
+04/15/2014 02:20:49 PM - config_parser.c:parse_config:315 - CONFIG(line 154): # Start i3bar to display a workspace bar
+04/15/2014 02:20:49 PM - config_parser.c:parse_config:315 - CONFIG(line 155): bar {
+04/15/2014 02:20:49 PM - config_parser.c:parse_config:315 - CONFIG(line 156): 
+04/15/2014 02:20:49 PM - config_parser.c:parse_config:315 - CONFIG(line 157): 	colors {
+04/15/2014 02:20:49 PM - config_parser.c:parse_config:315 - CONFIG(line 158): 		# class             border   background  text
+04/15/2014 02:20:49 PM - config_parser.c:parse_config:315 - CONFIG(line 159): 		background                   #000000
+04/15/2014 02:20:49 PM - config_parser.c:parse_config:315 - CONFIG(line 160): 		statusline                               #ffffff
+04/15/2014 02:20:49 PM - config_parser.c:parse_config:315 - CONFIG(line 161): 		focused_workspace   #282d76  #181b46     #ffffff
+04/15/2014 02:20:49 PM - config_parser.c:parse_config:315 - CONFIG(line 162): 		active_workspace    #333333  #5f676a     #ffffff
+04/15/2014 02:20:49 PM - config_parser.c:parse_config:315 - CONFIG(line 163): 		inactive_workspace  #333333  #222222     #888888
+04/15/2014 02:20:49 PM - config_parser.c:parse_config:315 - CONFIG(line 164): 		urgent_workspace    #2f343a  #900000     #ffffff
+04/15/2014 02:20:49 PM - config_parser.c:parse_config:315 - CONFIG(line 165): 	}
+04/15/2014 02:20:49 PM - config_parser.c:parse_config:315 - CONFIG(line 166): 	# Tray position
+04/15/2014 02:20:49 PM - config_parser.c:parse_config:315 - CONFIG(line 167): 	# position <top|bottom>
+04/15/2014 02:20:49 PM - config_parser.c:parse_config:315 - CONFIG(line 168): 	position top
+04/15/2014 02:20:49 PM - config_parser.c:parse_config:315 - CONFIG(line 169): 	
+04/15/2014 02:20:49 PM - config_parser.c:parse_config:315 - CONFIG(line 170): 	# i3bar by default provides a system tray area where programs such as
+04/15/2014 02:20:49 PM - config_parser.c:parse_config:315 - CONFIG(line 171): 	# NetworkManager, VLC, Pidgin, etc. can place little icons.
+04/15/2014 02:20:49 PM - config_parser.c:parse_config:315 - CONFIG(line 172): 	#
+04/15/2014 02:20:49 PM - config_parser.c:parse_config:315 - CONFIG(line 173): 	# tray_output <none|primary|output>
+04/15/2014 02:20:49 PM - config_parser.c:parse_config:315 - CONFIG(line 174): 	tray_output primary
+04/15/2014 02:20:49 PM - config_parser.c:parse_config:315 - CONFIG(line 175): 	
+04/15/2014 02:20:49 PM - config_parser.c:parse_config:315 - CONFIG(line 176): 	# font <X core font description>
+04/15/2014 02:20:49 PM - config_parser.c:parse_config:315 - CONFIG(line 177): 	# font pango:[family list] [style options] [size]
+04/15/2014 02:20:49 PM - config_parser.c:parse_config:315 - CONFIG(line 178): 	# Not recommended with conky
+04/15/2014 02:20:49 PM - config_parser.c:parse_config:315 - CONFIG(line 179): 	
+04/15/2014 02:20:49 PM - config_parser.c:parse_config:315 - CONFIG(line 180): 	# Start i3status for a clock. Conky handles the rest.
+04/15/2014 02:20:49 PM - config_parser.c:parse_config:315 - CONFIG(line 181): 	#
+04/15/2014 02:20:49 PM - config_parser.c:parse_config:315 - CONFIG(line 182): 	# i3status --config ~/.i3/path/to/file
+04/15/2014 02:20:49 PM - config_parser.c:parse_config:315 - CONFIG(line 183): 	# or conky
+04/15/2014 02:20:49 PM - config_parser.c:parse_config:315 - CONFIG(line 184): 	status_command ~/.i3/conky
+04/15/2014 02:20:49 PM - config_parser.c:parse_config:315 - CONFIG(line 185): 	
+04/15/2014 02:20:49 PM - config_parser.c:parse_config:315 - CONFIG(line 186): }
+04/15/2014 02:20:49 PM - config_directives.c:cfg_criteria_init:41 - Initializing criteria, current_match = 0x64a640, state = 66
+04/15/2014 02:20:49 PM - config_directives.c:cfg_criteria_init:41 - Initializing criteria, current_match = 0x64a640, state = 66
+04/15/2014 02:20:49 PM - config_directives.c:cfg_criteria_init:41 - Initializing criteria, current_match = 0x64a640, state = 66
+04/15/2014 02:20:49 PM - config_directives.c:cfg_criteria_init:41 - Initializing criteria, current_match = 0x64a640, state = 66
+04/15/2014 02:20:49 PM - config_directives.c:cfg_criteria_init:41 - Initializing criteria, current_match = 0x64a640, state = 66
+04/15/2014 02:20:49 PM - config_directives.c:cfg_criteria_init:41 - Initializing criteria, current_match = 0x64a640, state = 66
+04/15/2014 02:20:49 PM - config_directives.c:cfg_binding:183 - bindtype bindsym, modifiers Mod4, key Return, release (null)
+04/15/2014 02:20:49 PM - config_directives.c:cfg_criteria_init:41 - Initializing criteria, current_match = 0x64a640, state = 66
+04/15/2014 02:20:49 PM - config_directives.c:cfg_criteria_init:41 - Initializing criteria, current_match = 0x64a640, state = 66
+04/15/2014 02:20:49 PM - config_directives.c:cfg_binding:183 - bindtype bindsym, modifiers Mod4, key d, release (null)
+04/15/2014 02:20:49 PM - config_directives.c:cfg_criteria_init:41 - Initializing criteria, current_match = 0x64a640, state = 66
+04/15/2014 02:20:49 PM - config_directives.c:cfg_criteria_init:41 - Initializing criteria, current_match = 0x64a640, state = 66
+04/15/2014 02:20:49 PM - [libi3] libi3/font.c Using Pango font Terminus, size 9
+04/15/2014 02:20:49 PM - config_directives.c:cfg_criteria_init:41 - Initializing criteria, current_match = 0x64a640, state = 66
+04/15/2014 02:20:49 PM - config_directives.c:cfg_criteria_init:41 - Initializing criteria, current_match = 0x64a640, state = 66
+04/15/2014 02:20:49 PM - config_directives.c:cfg_criteria_init:41 - Initializing criteria, current_match = 0x64a640, state = 66
+04/15/2014 02:20:49 PM - config_directives.c:cfg_criteria_init:41 - Initializing criteria, current_match = 0x64a640, state = 66
+04/15/2014 02:20:49 PM - config_directives.c:cfg_criteria_init:41 - Initializing criteria, current_match = 0x64a640, state = 66
+04/15/2014 02:20:49 PM - config_directives.c:cfg_criteria_init:41 - Initializing criteria, current_match = 0x64a640, state = 66
+04/15/2014 02:20:49 PM - config_directives.c:cfg_criteria_init:41 - Initializing criteria, current_match = 0x64a640, state = 66
+04/15/2014 02:20:49 PM - config_directives.c:cfg_criteria_init:41 - Initializing criteria, current_match = 0x64a640, state = 66
+04/15/2014 02:20:49 PM - config_directives.c:cfg_criteria_init:41 - Initializing criteria, current_match = 0x64a640, state = 66
+04/15/2014 02:20:49 PM - config_directives.c:cfg_criteria_init:41 - Initializing criteria, current_match = 0x64a640, state = 66
+04/15/2014 02:20:49 PM - config_directives.c:cfg_criteria_init:41 - Initializing criteria, current_match = 0x64a640, state = 66
+04/15/2014 02:20:49 PM - ERROR: CONFIG: Expected one of these tokens: '--release', <string>
+04/15/2014 02:20:49 PM - ERROR: CONFIG: (in file /home/kj/.i3/config)
+04/15/2014 02:20:49 PM - ERROR: CONFIG: Line  52: # Kill focused window
+04/15/2014 02:20:49 PM - ERROR: CONFIG: Line  53: bindsym Mod4+k
+04/15/2014 02:20:49 PM - ERROR: CONFIG: Line  54: 
+04/15/2014 02:20:49 PM - ERROR: CONFIG:           
+04/15/2014 02:20:49 PM - ERROR: CONFIG: Line  55: # Dvorak-Vim-style change-focus keys
+04/15/2014 02:20:49 PM - ERROR: CONFIG: Line  56: bindsym Mod4+h focus left
+04/15/2014 02:20:49 PM - config_directives.c:cfg_criteria_init:41 - Initializing criteria, current_match = 0x64a640, state = 66
+04/15/2014 02:20:49 PM - config_directives.c:cfg_criteria_init:41 - Initializing criteria, current_match = 0x64a640, state = 66
+04/15/2014 02:20:49 PM - config_directives.c:cfg_binding:183 - bindtype bindsym, modifiers Mod4, key h, release (null)
+04/15/2014 02:20:49 PM - config_directives.c:cfg_criteria_init:41 - Initializing criteria, current_match = 0x64a640, state = 66
+04/15/2014 02:20:49 PM - config_directives.c:cfg_binding:183 - bindtype bindsym, modifiers Mod4, key t, release (null)
+04/15/2014 02:20:49 PM - config_directives.c:cfg_criteria_init:41 - Initializing criteria, current_match = 0x64a640, state = 66
+04/15/2014 02:20:49 PM - config_directives.c:cfg_binding:183 - bindtype bindsym, modifiers Mod4, key n, release (null)
+04/15/2014 02:20:49 PM - config_directives.c:cfg_criteria_init:41 - Initializing criteria, current_match = 0x64a640, state = 66
+04/15/2014 02:20:49 PM - config_directives.c:cfg_binding:183 - bindtype bindsym, modifiers Mod4, key s, release (null)
+04/15/2014 02:20:49 PM - config_directives.c:cfg_criteria_init:41 - Initializing criteria, current_match = 0x64a640, state = 66
+04/15/2014 02:20:49 PM - config_directives.c:cfg_criteria_init:41 - Initializing criteria, current_match = 0x64a640, state = 66
+04/15/2014 02:20:49 PM - config_directives.c:cfg_binding:183 - bindtype bindsym, modifiers Mod4,Shift, key H, release (null)
+04/15/2014 02:20:49 PM - config_directives.c:cfg_criteria_init:41 - Initializing criteria, current_match = 0x64a640, state = 66
+04/15/2014 02:20:49 PM - config_directives.c:cfg_binding:183 - bindtype bindsym, modifiers Mod4,Shift, key T, release (null)
+04/15/2014 02:20:49 PM - config_directives.c:cfg_criteria_init:41 - Initializing criteria, current_match = 0x64a640, state = 66
+04/15/2014 02:20:49 PM - config_directives.c:cfg_binding:183 - bindtype bindsym, modifiers Mod4,Shift, key N, release (null)
+04/15/2014 02:20:49 PM - config_directives.c:cfg_criteria_init:41 - Initializing criteria, current_match = 0x64a640, state = 66
+04/15/2014 02:20:49 PM - config_directives.c:cfg_binding:183 - bindtype bindsym, modifiers Mod4,Shift, key S, release (null)
+04/15/2014 02:20:49 PM - config_directives.c:cfg_criteria_init:41 - Initializing criteria, current_match = 0x64a640, state = 66
+04/15/2014 02:20:49 PM - config_directives.c:cfg_criteria_init:41 - Initializing criteria, current_match = 0x64a640, state = 66
+04/15/2014 02:20:49 PM - ERROR: CONFIG: Expected one of these tokens: '--release', <string>
+04/15/2014 02:20:49 PM - ERROR: CONFIG: (in file /home/kj/.i3/config)
+04/15/2014 02:20:49 PM - ERROR: CONFIG: Line  68: # Horizontal
+04/15/2014 02:20:49 PM - ERROR: CONFIG: Line  69: bindsym Mod4+z
+04/15/2014 02:20:49 PM - ERROR: CONFIG: Line  70: # Vertical
+04/15/2014 02:20:49 PM - ERROR: CONFIG:           ^^^^^^^^^^
+04/15/2014 02:20:49 PM - ERROR: CONFIG: Line  71: bindsym Mod4+v
+04/15/2014 02:20:49 PM - ERROR: CONFIG: Line  72: 
+04/15/2014 02:20:49 PM - config_directives.c:cfg_criteria_init:41 - Initializing criteria, current_match = 0x64a640, state = 66
+04/15/2014 02:20:49 PM - ERROR: CONFIG: Expected one of these tokens: '--release', <string>
+04/15/2014 02:20:49 PM - ERROR: CONFIG: (in file /home/kj/.i3/config)
+04/15/2014 02:20:49 PM - ERROR: CONFIG: Line  70: # Vertical
+04/15/2014 02:20:49 PM - ERROR: CONFIG: Line  71: bindsym Mod4+v
+04/15/2014 02:20:49 PM - ERROR: CONFIG: Line  72: 
+04/15/2014 02:20:49 PM - ERROR: CONFIG:           
+04/15/2014 02:20:49 PM - ERROR: CONFIG: Line  73: # Enter fullscreen mode for the focused container
+04/15/2014 02:20:49 PM - ERROR: CONFIG: Line  74: bindsym Mod4+f
+04/15/2014 02:20:49 PM - config_directives.c:cfg_criteria_init:41 - Initializing criteria, current_match = 0x64a640, state = 66
+04/15/2014 02:20:49 PM - config_directives.c:cfg_criteria_init:41 - Initializing criteria, current_match = 0x64a640, state = 66
+04/15/2014 02:20:49 PM - ERROR: CONFIG: Expected one of these tokens: '--release', <string>
+04/15/2014 02:20:49 PM - ERROR: CONFIG: (in file /home/kj/.i3/config)
+04/15/2014 02:20:49 PM - ERROR: CONFIG: Line  73: # Enter fullscreen mode for the focused container
+04/15/2014 02:20:49 PM - ERROR: CONFIG: Line  74: bindsym Mod4+f
+04/15/2014 02:20:49 PM - ERROR: CONFIG: Line  75: 
+04/15/2014 02:20:49 PM - ERROR: CONFIG:           
+04/15/2014 02:20:49 PM - ERROR: CONFIG: Line  76: # Change the container layout (stacked, tabbed, default)
+04/15/2014 02:20:49 PM - ERROR: CONFIG: Line  77: bindsym Mod4+apostrophe layout stacking
+04/15/2014 02:20:49 PM - config_directives.c:cfg_criteria_init:41 - Initializing criteria, current_match = 0x64a640, state = 66
+04/15/2014 02:20:49 PM - config_directives.c:cfg_criteria_init:41 - Initializing criteria, current_match = 0x64a640, state = 66
+04/15/2014 02:20:49 PM - config_directives.c:cfg_binding:183 - bindtype bindsym, modifiers Mod4, key apostrophe, release (null)
+04/15/2014 02:20:49 PM - config_directives.c:cfg_criteria_init:41 - Initializing criteria, current_match = 0x64a640, state = 66
+04/15/2014 02:20:49 PM - config_directives.c:cfg_binding:183 - bindtype bindsym, modifiers Mod4, key comma, release (null)
+04/15/2014 02:20:49 PM - config_directives.c:cfg_criteria_init:41 - Initializing criteria, current_match = 0x64a640, state = 66
+04/15/2014 02:20:49 PM - config_directives.c:cfg_binding:183 - bindtype bindsym, modifiers Mod4, key period, release (null)
+04/15/2014 02:20:49 PM - config_directives.c:cfg_criteria_init:41 - Initializing criteria, current_match = 0x64a640, state = 66
+04/15/2014 02:20:49 PM - config_directives.c:cfg_criteria_init:41 - Initializing criteria, current_match = 0x64a640, state = 66
+04/15/2014 02:20:49 PM - config_directives.c:cfg_binding:183 - bindtype bindsym, modifiers Mod4,Shift, key space, release (null)
+04/15/2014 02:20:49 PM - config_directives.c:cfg_criteria_init:41 - Initializing criteria, current_match = 0x64a640, state = 66
+04/15/2014 02:20:49 PM - config_directives.c:cfg_criteria_init:41 - Initializing criteria, current_match = 0x64a640, state = 66
+04/15/2014 02:20:49 PM - config_directives.c:cfg_binding:183 - bindtype bindsym, modifiers Mod4, key space, release (null)
+04/15/2014 02:20:49 PM - config_directives.c:cfg_criteria_init:41 - Initializing criteria, current_match = 0x64a640, state = 66
+04/15/2014 02:20:49 PM - config_directives.c:cfg_criteria_init:41 - Initializing criteria, current_match = 0x64a640, state = 66
+04/15/2014 02:20:49 PM - config_directives.c:cfg_binding:183 - bindtype bindsym, modifiers Mod4, key a, release (null)
+04/15/2014 02:20:49 PM - config_directives.c:cfg_criteria_init:41 - Initializing criteria, current_match = 0x64a640, state = 66
+04/15/2014 02:20:49 PM - config_directives.c:cfg_criteria_init:41 - Initializing criteria, current_match = 0x64a640, state = 66
+04/15/2014 02:20:49 PM - ERROR: CONFIG: Expected one of these tokens: '--release', <string>
+04/15/2014 02:20:49 PM - ERROR: CONFIG: (in file /home/kj/.i3/config)
+04/15/2014 02:20:49 PM - ERROR: CONFIG: Line  90: # Focus on child window
+04/15/2014 02:20:49 PM - ERROR: CONFIG: Line  91: bindsym Mod4+o
+04/15/2014 02:20:49 PM - ERROR: CONFIG: Line  92: 
+04/15/2014 02:20:49 PM - ERROR: CONFIG:           
+04/15/2014 02:20:49 PM - ERROR: CONFIG: Line  93: # Workspace switching
+04/15/2014 02:20:49 PM - ERROR: CONFIG: Line  94: bindsym Mod4+1 workspace 1
+04/15/2014 02:20:49 PM - config_directives.c:cfg_criteria_init:41 - Initializing criteria, current_match = 0x64a640, state = 66
+04/15/2014 02:20:49 PM - config_directives.c:cfg_criteria_init:41 - Initializing criteria, current_match = 0x64a640, state = 66
+04/15/2014 02:20:49 PM - config_directives.c:cfg_binding:183 - bindtype bindsym, modifiers Mod4, key 1, release (null)
+04/15/2014 02:20:49 PM - config_directives.c:cfg_criteria_init:41 - Initializing criteria, current_match = 0x64a640, state = 66
+04/15/2014 02:20:49 PM - config_directives.c:cfg_binding:183 - bindtype bindsym, modifiers Mod4, key 2, release (null)
+04/15/2014 02:20:49 PM - config_directives.c:cfg_criteria_init:41 - Initializing criteria, current_match = 0x64a640, state = 66
+04/15/2014 02:20:49 PM - config_directives.c:cfg_binding:183 - bindtype bindsym, modifiers Mod4, key 3, release (null)
+04/15/2014 02:20:49 PM - config_directives.c:cfg_criteria_init:41 - Initializing criteria, current_match = 0x64a640, state = 66
+04/15/2014 02:20:49 PM - config_directives.c:cfg_binding:183 - bindtype bindsym, modifiers Mod4, key 4, release (null)
+04/15/2014 02:20:49 PM - config_directives.c:cfg_criteria_init:41 - Initializing criteria, current_match = 0x64a640, state = 66
+04/15/2014 02:20:49 PM - config_directives.c:cfg_binding:183 - bindtype bindsym, modifiers Mod4, key 5, release (null)
+04/15/2014 02:20:49 PM - config_directives.c:cfg_criteria_init:41 - Initializing criteria, current_match = 0x64a640, state = 66
+04/15/2014 02:20:49 PM - config_directives.c:cfg_binding:183 - bindtype bindsym, modifiers Mod4, key 6, release (null)
+04/15/2014 02:20:49 PM - config_directives.c:cfg_criteria_init:41 - Initializing criteria, current_match = 0x64a640, state = 66
+04/15/2014 02:20:49 PM - config_directives.c:cfg_binding:183 - bindtype bindsym, modifiers Mod4, key 7, release (null)
+04/15/2014 02:20:49 PM - config_directives.c:cfg_criteria_init:41 - Initializing criteria, current_match = 0x64a640, state = 66
+04/15/2014 02:20:49 PM - config_directives.c:cfg_binding:183 - bindtype bindsym, modifiers Mod4, key 8, release (null)
+04/15/2014 02:20:49 PM - config_directives.c:cfg_criteria_init:41 - Initializing criteria, current_match = 0x64a640, state = 66
+04/15/2014 02:20:49 PM - config_directives.c:cfg_binding:183 - bindtype bindsym, modifiers Mod4, key 9, release (null)
+04/15/2014 02:20:49 PM - config_directives.c:cfg_criteria_init:41 - Initializing criteria, current_match = 0x64a640, state = 66
+04/15/2014 02:20:49 PM - config_directives.c:cfg_binding:183 - bindtype bindsym, modifiers Mod4, key 0, release (null)
+04/15/2014 02:20:49 PM - config_directives.c:cfg_criteria_init:41 - Initializing criteria, current_match = 0x64a640, state = 66
+04/15/2014 02:20:49 PM - config_directives.c:cfg_criteria_init:41 - Initializing criteria, current_match = 0x64a640, state = 66
+04/15/2014 02:20:49 PM - config_directives.c:cfg_binding:183 - bindtype bindsym, modifiers Mod4,Shift, key exclam, release (null)
+04/15/2014 02:20:49 PM - config_directives.c:cfg_criteria_init:41 - Initializing criteria, current_match = 0x64a640, state = 66
+04/15/2014 02:20:49 PM - config_directives.c:cfg_binding:183 - bindtype bindsym, modifiers Mod4,Shift, key at, release (null)
+04/15/2014 02:20:49 PM - config_directives.c:cfg_criteria_init:41 - Initializing criteria, current_match = 0x64a640, state = 66
+04/15/2014 02:20:49 PM - config_directives.c:cfg_binding:183 - bindtype bindsym, modifiers Mod4,Shift, key numbersign, release (null)
+04/15/2014 02:20:49 PM - config_directives.c:cfg_criteria_init:41 - Initializing criteria, current_match = 0x64a640, state = 66
+04/15/2014 02:20:49 PM - config_directives.c:cfg_binding:183 - bindtype bindsym, modifiers Mod4,Shift, key dollar, release (null)
+04/15/2014 02:20:49 PM - config_directives.c:cfg_criteria_init:41 - Initializing criteria, current_match = 0x64a640, state = 66
+04/15/2014 02:20:49 PM - config_directives.c:cfg_binding:183 - bindtype bindsym, modifiers Mod4,Shift, key percent, release (null)
+04/15/2014 02:20:49 PM - config_directives.c:cfg_criteria_init:41 - Initializing criteria, current_match = 0x64a640, state = 66
+04/15/2014 02:20:49 PM - config_directives.c:cfg_binding:183 - bindtype bindsym, modifiers Mod4,Shift, key asciicircum, release (null)
+04/15/2014 02:20:49 PM - config_directives.c:cfg_criteria_init:41 - Initializing criteria, current_match = 0x64a640, state = 66
+04/15/2014 02:20:49 PM - config_directives.c:cfg_binding:183 - bindtype bindsym, modifiers Mod4,Shift, key ampersand, release (null)
+04/15/2014 02:20:49 PM - config_directives.c:cfg_criteria_init:41 - Initializing criteria, current_match = 0x64a640, state = 66
+04/15/2014 02:20:49 PM - config_directives.c:cfg_binding:183 - bindtype bindsym, modifiers Mod4,Shift, key asterisk, release (null)
+04/15/2014 02:20:49 PM - config_directives.c:cfg_criteria_init:41 - Initializing criteria, current_match = 0x64a640, state = 66
+04/15/2014 02:20:49 PM - config_directives.c:cfg_binding:183 - bindtype bindsym, modifiers Mod4,Shift, key parenleft, release (null)
+04/15/2014 02:20:49 PM - config_directives.c:cfg_criteria_init:41 - Initializing criteria, current_match = 0x64a640, state = 66
+04/15/2014 02:20:49 PM - config_directives.c:cfg_binding:183 - bindtype bindsym, modifiers Mod4,Shift, key parenright, release (null)
+04/15/2014 02:20:49 PM - config_directives.c:cfg_criteria_init:41 - Initializing criteria, current_match = 0x64a640, state = 66
+04/15/2014 02:20:49 PM - config_directives.c:cfg_criteria_init:41 - Initializing criteria, current_match = 0x64a640, state = 66
+04/15/2014 02:20:49 PM - config_directives.c:cfg_binding:183 - bindtype bindsym, modifiers Mod4,Shift, key J, release (null)
+04/15/2014 02:20:49 PM - config_directives.c:cfg_criteria_init:41 - Initializing criteria, current_match = 0x64a640, state = 66
+04/15/2014 02:20:49 PM - config_directives.c:cfg_criteria_init:41 - Initializing criteria, current_match = 0x64a640, state = 66
+04/15/2014 02:20:49 PM - config_directives.c:cfg_binding:183 - bindtype bindsym, modifiers Mod4,Shift, key R, release (null)
+04/15/2014 02:20:49 PM - config_directives.c:cfg_criteria_init:41 - Initializing criteria, current_match = 0x64a640, state = 66
+04/15/2014 02:20:49 PM - config_directives.c:cfg_criteria_init:41 - Initializing criteria, current_match = 0x64a640, state = 66
+04/15/2014 02:20:49 PM - config_directives.c:cfg_binding:183 - bindtype bindsym, modifiers Mod4,Shift, key Q, release (null)
+04/15/2014 02:20:49 PM - config_directives.c:cfg_criteria_init:41 - Initializing criteria, current_match = 0x64a640, state = 66
+04/15/2014 02:20:49 PM - config_directives.c:cfg_criteria_init:41 - Initializing criteria, current_match = 0x64a640, state = 66
+04/15/2014 02:20:49 PM - config_directives.c:cfg_enter_mode:231 - 	 now in mode resize
+04/15/2014 02:20:49 PM - config_directives.c:cfg_criteria_init:41 - Initializing criteria, current_match = 0x64a640, state = 66
+04/15/2014 02:20:49 PM - config_directives.c:cfg_criteria_init:41 - Initializing criteria, current_match = 0x64a640, state = 66
+04/15/2014 02:20:49 PM - config_directives.c:cfg_criteria_init:41 - Initializing criteria, current_match = 0x64a640, state = 66
+04/15/2014 02:20:49 PM - config_directives.c:cfg_mode_binding:209 - bindtype bindsym, modifiers (null), key h, release (null)
+04/15/2014 02:20:49 PM - config_directives.c:cfg_criteria_init:41 - Initializing criteria, current_match = 0x64a640, state = 66
+04/15/2014 02:20:49 PM - config_directives.c:cfg_mode_binding:209 - bindtype bindsym, modifiers (null), key s, release (null)
+04/15/2014 02:20:49 PM - config_directives.c:cfg_criteria_init:41 - Initializing criteria, current_match = 0x64a640, state = 66
+04/15/2014 02:20:49 PM - config_directives.c:cfg_mode_binding:209 - bindtype bindsym, modifiers (null), key t, release (null)
+04/15/2014 02:20:49 PM - config_directives.c:cfg_criteria_init:41 - Initializing criteria, current_match = 0x64a640, state = 66
+04/15/2014 02:20:49 PM - config_directives.c:cfg_mode_binding:209 - bindtype bindsym, modifiers (null), key n, release (null)
+04/15/2014 02:20:49 PM - config_directives.c:cfg_criteria_init:41 - Initializing criteria, current_match = 0x64a640, state = 66
+04/15/2014 02:20:49 PM - config_directives.c:cfg_criteria_init:41 - Initializing criteria, current_match = 0x64a640, state = 66
+04/15/2014 02:20:49 PM - config_directives.c:cfg_mode_binding:209 - bindtype bindsym, modifiers (null), key Escape, release (null)
+04/15/2014 02:20:49 PM - config_directives.c:cfg_criteria_init:41 - Initializing criteria, current_match = 0x64a640, state = 66
+04/15/2014 02:20:49 PM - config_directives.c:cfg_criteria_init:41 - Initializing criteria, current_match = 0x64a640, state = 66
+04/15/2014 02:20:49 PM - config_directives.c:cfg_binding:183 - bindtype bindsym, modifiers Mod4, key r, release (null)
+04/15/2014 02:20:49 PM - config_directives.c:cfg_criteria_init:41 - Initializing criteria, current_match = 0x64a640, state = 66
+04/15/2014 02:20:49 PM - config_directives.c:cfg_criteria_init:41 - Initializing criteria, current_match = 0x64a640, state = 66
+04/15/2014 02:20:49 PM - config_directives.c:cfg_criteria_init:41 - Initializing criteria, current_match = 0x64a640, state = 66
+04/15/2014 02:20:49 PM - config_directives.c:cfg_criteria_init:41 - Initializing criteria, current_match = 0x64a640, state = 66
+04/15/2014 02:20:49 PM - config_directives.c:cfg_criteria_init:41 - Initializing criteria, current_match = 0x64a640, state = 66
+04/15/2014 02:20:49 PM - config_directives.c:cfg_criteria_init:41 - Initializing criteria, current_match = 0x64a640, state = 66
+04/15/2014 02:20:49 PM - config_directives.c:cfg_criteria_init:41 - Initializing criteria, current_match = 0x64a640, state = 66
+04/15/2014 02:20:49 PM - config_directives.c:cfg_criteria_init:41 - Initializing criteria, current_match = 0x64a640, state = 66
+04/15/2014 02:20:49 PM - config_directives.c:cfg_criteria_init:41 - Initializing criteria, current_match = 0x64a640, state = 66
+04/15/2014 02:20:49 PM - config_directives.c:cfg_criteria_init:41 - Initializing criteria, current_match = 0x64a640, state = 66
+04/15/2014 02:20:49 PM - config_directives.c:cfg_criteria_init:41 - Initializing criteria, current_match = 0x64a640, state = 66
+04/15/2014 02:20:49 PM - config_directives.c:cfg_criteria_init:41 - Initializing criteria, current_match = 0x64a640, state = 66
+04/15/2014 02:20:49 PM - config_directives.c:cfg_criteria_init:41 - Initializing criteria, current_match = 0x64a640, state = 66
+04/15/2014 02:20:49 PM - config_directives.c:cfg_criteria_init:41 - Initializing criteria, current_match = 0x64a640, state = 66
+04/15/2014 02:20:49 PM - config_directives.c:cfg_criteria_init:41 - Initializing criteria, current_match = 0x64a640, state = 66
+04/15/2014 02:20:49 PM - config_directives.c:cfg_criteria_init:41 - Initializing criteria, current_match = 0x64a640, state = 66
+04/15/2014 02:20:49 PM - config_directives.c:cfg_criteria_init:41 - Initializing criteria, current_match = 0x64a640, state = 66
+04/15/2014 02:20:49 PM - config_directives.c:cfg_criteria_init:41 - Initializing criteria, current_match = 0x64a640, state = 66
+04/15/2014 02:20:49 PM - config_directives.c:cfg_criteria_init:41 - Initializing criteria, current_match = 0x64a640, state = 66
+04/15/2014 02:20:49 PM - config_directives.c:cfg_criteria_init:41 - Initializing criteria, current_match = 0x64a640, state = 66
+04/15/2014 02:20:49 PM - config_directives.c:cfg_criteria_init:41 - Initializing criteria, current_match = 0x64a640, state = 66
+04/15/2014 02:20:49 PM - config_directives.c:cfg_bar_finish:558 - 	 new bar configuration finished, saving.
+04/15/2014 02:20:49 PM - config_directives.c:cfg_criteria_init:41 - Initializing criteria, current_match = 0x64a640, state = 66
+04/15/2014 02:20:49 PM - config_directives.c:cfg_criteria_init:41 - Initializing criteria, current_match = 0x64a640, state = 66
+04/15/2014 02:20:49 PM - ERROR: FYI: You are using i3 version 4.6 (2013-08-07, branch "tags/4.6")
+04/15/2014 02:20:49 PM - util.c:start_nagbar:407 - Starting i3-nagbar with PID 4198
+04/15/2014 02:20:49 PM - main.c:main:559 - root geometry reply: (0, 0) 1366 x 768
+04/15/2014 02:20:49 PM - config.c:translate_keysyms:156 - Translated symbol "Return" to 1 keycode
+04/15/2014 02:20:49 PM - config.c:translate_keysyms:156 - Translated symbol "d" to 1 keycode
+04/15/2014 02:20:49 PM - config.c:translate_keysyms:156 - Translated symbol "h" to 1 keycode
+04/15/2014 02:20:49 PM - config.c:translate_keysyms:156 - Translated symbol "t" to 1 keycode
+04/15/2014 02:20:49 PM - config.c:translate_keysyms:156 - Translated symbol "n" to 1 keycode
+04/15/2014 02:20:49 PM - config.c:translate_keysyms:156 - Translated symbol "s" to 1 keycode
+04/15/2014 02:20:49 PM - config.c:translate_keysyms:156 - Translated symbol "H" to 1 keycode
+04/15/2014 02:20:49 PM - config.c:translate_keysyms:156 - Translated symbol "T" to 1 keycode
+04/15/2014 02:20:49 PM - config.c:translate_keysyms:156 - Translated symbol "N" to 1 keycode
+04/15/2014 02:20:49 PM - config.c:translate_keysyms:156 - Translated symbol "S" to 1 keycode
+04/15/2014 02:20:49 PM - config.c:translate_keysyms:156 - Translated symbol "apostrophe" to 1 keycode
+04/15/2014 02:20:49 PM - config.c:translate_keysyms:156 - Translated symbol "comma" to 1 keycode
+04/15/2014 02:20:49 PM - config.c:translate_keysyms:156 - Translated symbol "period" to 1 keycode
+04/15/2014 02:20:49 PM - config.c:translate_keysyms:156 - Translated symbol "space" to 1 keycode
+04/15/2014 02:20:49 PM - config.c:translate_keysyms:156 - Translated symbol "space" to 1 keycode
+04/15/2014 02:20:49 PM - config.c:translate_keysyms:156 - Translated symbol "a" to 1 keycode
+04/15/2014 02:20:49 PM - config.c:translate_keysyms:156 - Translated symbol "1" to 1 keycode
+04/15/2014 02:20:49 PM - config.c:translate_keysyms:156 - Translated symbol "2" to 1 keycode
+04/15/2014 02:20:49 PM - config.c:translate_keysyms:156 - Translated symbol "3" to 1 keycode
+04/15/2014 02:20:49 PM - config.c:translate_keysyms:156 - Translated symbol "4" to 1 keycode
+04/15/2014 02:20:49 PM - config.c:translate_keysyms:156 - Translated symbol "5" to 1 keycode
+04/15/2014 02:20:49 PM - config.c:translate_keysyms:156 - Translated symbol "6" to 1 keycode
+04/15/2014 02:20:49 PM - config.c:translate_keysyms:156 - Translated symbol "7" to 1 keycode
+04/15/2014 02:20:49 PM - config.c:translate_keysyms:156 - Translated symbol "8" to 1 keycode
+04/15/2014 02:20:49 PM - config.c:translate_keysyms:156 - Translated symbol "9" to 1 keycode
+04/15/2014 02:20:49 PM - config.c:translate_keysyms:156 - Translated symbol "0" to 1 keycode
+04/15/2014 02:20:49 PM - config.c:translate_keysyms:156 - Translated symbol "exclam" to 1 keycode
+04/15/2014 02:20:49 PM - config.c:translate_keysyms:156 - Translated symbol "at" to 1 keycode
+04/15/2014 02:20:49 PM - config.c:translate_keysyms:156 - Translated symbol "numbersign" to 1 keycode
+04/15/2014 02:20:49 PM - config.c:translate_keysyms:156 - Translated symbol "dollar" to 1 keycode
+04/15/2014 02:20:49 PM - config.c:translate_keysyms:156 - Translated symbol "percent" to 1 keycode
+04/15/2014 02:20:49 PM - config.c:translate_keysyms:156 - Translated symbol "asciicircum" to 1 keycode
+04/15/2014 02:20:49 PM - config.c:translate_keysyms:156 - Translated symbol "ampersand" to 1 keycode
+04/15/2014 02:20:49 PM - config.c:translate_keysyms:156 - Translated symbol "asterisk" to 1 keycode
+04/15/2014 02:20:49 PM - config.c:translate_keysyms:156 - Translated symbol "parenleft" to 2 keycode
+04/15/2014 02:20:49 PM - config.c:translate_keysyms:156 - Translated symbol "parenright" to 2 keycode
+04/15/2014 02:20:49 PM - config.c:translate_keysyms:156 - Translated symbol "J" to 1 keycode
+04/15/2014 02:20:49 PM - config.c:translate_keysyms:156 - Translated symbol "R" to 1 keycode
+04/15/2014 02:20:49 PM - config.c:translate_keysyms:156 - Translated symbol "Q" to 1 keycode
+04/15/2014 02:20:49 PM - config.c:translate_keysyms:156 - Translated symbol "r" to 1 keycode
+04/15/2014 02:20:49 PM - config.c:grab_keycode_for_binding:34 - Grabbing 36 with modifiers 64 (with mod_mask_lock 66)
+04/15/2014 02:20:49 PM - config.c:grab_keycode_for_binding:34 - Grabbing 43 with modifiers 64 (with mod_mask_lock 66)
+04/15/2014 02:20:49 PM - config.c:grab_keycode_for_binding:34 - Grabbing 44 with modifiers 64 (with mod_mask_lock 66)
+04/15/2014 02:20:49 PM - config.c:grab_keycode_for_binding:34 - Grabbing 45 with modifiers 64 (with mod_mask_lock 66)
+04/15/2014 02:20:49 PM - config.c:grab_keycode_for_binding:34 - Grabbing 46 with modifiers 64 (with mod_mask_lock 66)
+04/15/2014 02:20:49 PM - config.c:grab_keycode_for_binding:34 - Grabbing 47 with modifiers 64 (with mod_mask_lock 66)
+04/15/2014 02:20:49 PM - config.c:grab_keycode_for_binding:34 - Grabbing 44 with modifiers 65 (with mod_mask_lock 67)
+04/15/2014 02:20:49 PM - config.c:grab_keycode_for_binding:34 - Grabbing 45 with modifiers 65 (with mod_mask_lock 67)
+04/15/2014 02:20:49 PM - config.c:grab_keycode_for_binding:34 - Grabbing 46 with modifiers 65 (with mod_mask_lock 67)
+04/15/2014 02:20:49 PM - config.c:grab_keycode_for_binding:34 - Grabbing 47 with modifiers 65 (with mod_mask_lock 67)
+04/15/2014 02:20:49 PM - config.c:grab_keycode_for_binding:34 - Grabbing 24 with modifiers 64 (with mod_mask_lock 66)
+04/15/2014 02:20:49 PM - config.c:grab_keycode_for_binding:34 - Grabbing 25 with modifiers 64 (with mod_mask_lock 66)
+04/15/2014 02:20:49 PM - config.c:grab_keycode_for_binding:34 - Grabbing 26 with modifiers 64 (with mod_mask_lock 66)
+04/15/2014 02:20:49 PM - config.c:grab_keycode_for_binding:34 - Grabbing 65 with modifiers 65 (with mod_mask_lock 67)
+04/15/2014 02:20:49 PM - config.c:grab_keycode_for_binding:34 - Grabbing 65 with modifiers 64 (with mod_mask_lock 66)
+04/15/2014 02:20:49 PM - config.c:grab_keycode_for_binding:34 - Grabbing 38 with modifiers 64 (with mod_mask_lock 66)
+04/15/2014 02:20:49 PM - config.c:grab_keycode_for_binding:34 - Grabbing 10 with modifiers 64 (with mod_mask_lock 66)
+04/15/2014 02:20:49 PM - config.c:grab_keycode_for_binding:34 - Grabbing 11 with modifiers 64 (with mod_mask_lock 66)
+04/15/2014 02:20:49 PM - config.c:grab_keycode_for_binding:34 - Grabbing 12 with modifiers 64 (with mod_mask_lock 66)
+04/15/2014 02:20:49 PM - config.c:grab_keycode_for_binding:34 - Grabbing 13 with modifiers 64 (with mod_mask_lock 66)
+04/15/2014 02:20:49 PM - config.c:grab_keycode_for_binding:34 - Grabbing 14 with modifiers 64 (with mod_mask_lock 66)
+04/15/2014 02:20:49 PM - config.c:grab_keycode_for_binding:34 - Grabbing 15 with modifiers 64 (with mod_mask_lock 66)
+04/15/2014 02:20:49 PM - config.c:grab_keycode_for_binding:34 - Grabbing 16 with modifiers 64 (with mod_mask_lock 66)
+04/15/2014 02:20:49 PM - config.c:grab_keycode_for_binding:34 - Grabbing 17 with modifiers 64 (with mod_mask_lock 66)
+04/15/2014 02:20:49 PM - config.c:grab_keycode_for_binding:34 - Grabbing 18 with modifiers 64 (with mod_mask_lock 66)
+04/15/2014 02:20:49 PM - config.c:grab_keycode_for_binding:34 - Grabbing 19 with modifiers 64 (with mod_mask_lock 66)
+04/15/2014 02:20:49 PM - config.c:grab_keycode_for_binding:34 - Grabbing 10 with modifiers 65 (with mod_mask_lock 67)
+04/15/2014 02:20:49 PM - config.c:grab_keycode_for_binding:34 - Grabbing 11 with modifiers 65 (with mod_mask_lock 67)
+04/15/2014 02:20:49 PM - config.c:grab_keycode_for_binding:34 - Grabbing 12 with modifiers 65 (with mod_mask_lock 67)
+04/15/2014 02:20:49 PM - config.c:grab_keycode_for_binding:34 - Grabbing 13 with modifiers 65 (with mod_mask_lock 67)
+04/15/2014 02:20:49 PM - config.c:grab_keycode_for_binding:34 - Grabbing 14 with modifiers 65 (with mod_mask_lock 67)
+04/15/2014 02:20:49 PM - config.c:grab_keycode_for_binding:34 - Grabbing 15 with modifiers 65 (with mod_mask_lock 67)
+04/15/2014 02:20:49 PM - config.c:grab_keycode_for_binding:34 - Grabbing 16 with modifiers 65 (with mod_mask_lock 67)
+04/15/2014 02:20:49 PM - config.c:grab_keycode_for_binding:34 - Grabbing 17 with modifiers 65 (with mod_mask_lock 67)
+04/15/2014 02:20:49 PM - config.c:grab_keycode_for_binding:34 - Grabbing 18 with modifiers 65 (with mod_mask_lock 67)
+04/15/2014 02:20:49 PM - config.c:grab_keycode_for_binding:34 - Grabbing 187 with modifiers 65 (with mod_mask_lock 67)
+04/15/2014 02:20:49 PM - config.c:grab_keycode_for_binding:34 - Grabbing 19 with modifiers 65 (with mod_mask_lock 67)
+04/15/2014 02:20:49 PM - config.c:grab_keycode_for_binding:34 - Grabbing 188 with modifiers 65 (with mod_mask_lock 67)
+04/15/2014 02:20:49 PM - config.c:grab_keycode_for_binding:34 - Grabbing 54 with modifiers 65 (with mod_mask_lock 67)
+04/15/2014 02:20:49 PM - config.c:grab_keycode_for_binding:34 - Grabbing 32 with modifiers 65 (with mod_mask_lock 67)
+04/15/2014 02:20:49 PM - config.c:grab_keycode_for_binding:34 - Grabbing 53 with modifiers 65 (with mod_mask_lock 67)
+04/15/2014 02:20:49 PM - config.c:grab_keycode_for_binding:34 - Grabbing 32 with modifiers 64 (with mod_mask_lock 66)
+04/15/2014 02:20:49 PM - con.c:con_new_skeleton:64 - opening window 0
+04/15/2014 02:20:49 PM - con.c:con_new_skeleton:67 - color #ff0000
+04/15/2014 02:20:49 PM - x.c:x_con_init:152 - adding new state for window id 0x00800002
+04/15/2014 02:20:49 PM - con.c:con_new_skeleton:64 - opening window 1
+04/15/2014 02:20:49 PM - con.c:con_new_skeleton:67 - color #00FF00
+04/15/2014 02:20:49 PM - x.c:x_con_init:152 - adding new state for window id 0x00800003
+04/15/2014 02:20:49 PM - tree.c:_create___i3:41 - adding main content container
+04/15/2014 02:20:49 PM - con.c:con_new_skeleton:64 - opening window 2
+04/15/2014 02:20:49 PM - con.c:con_new_skeleton:67 - color #0000FF
+04/15/2014 02:20:49 PM - x.c:x_con_init:152 - adding new state for window id 0x00800004
+04/15/2014 02:20:49 PM - con.c:con_new_skeleton:64 - opening window 3
+04/15/2014 02:20:49 PM - con.c:con_new_skeleton:67 - color #ff00ff
+04/15/2014 02:20:49 PM - x.c:x_con_init:152 - adding new state for window id 0x00800005
+04/15/2014 02:20:49 PM - con.c:con_attach:114 - it's a workspace. num = -1
+04/15/2014 02:20:49 PM - main.c:main:666 - Checking for XRandR...
+04/15/2014 02:20:49 PM - randr.c:randr_query_outputs:613 - primary output is 00000000
+04/15/2014 02:20:49 PM - randr.c:handle_output:534 - found output with name LVDS1
+04/15/2014 02:20:49 PM - randr.c:handle_output:570 - mode: 1366x768+0+0
+04/15/2014 02:20:49 PM - randr.c:handle_output:534 - found output with name VGA1
+04/15/2014 02:20:49 PM - randr.c:handle_output:534 - found output with name HDMI1
+04/15/2014 02:20:49 PM - randr.c:handle_output:534 - found output with name DP1
+04/15/2014 02:20:49 PM - randr.c:randr_query_outputs:645 - output 0xb513a0 / LVDS1, position (0, 0), checking for clones
+04/15/2014 02:20:49 PM - randr.c:randr_query_outputs:684 - Need to initialize a Con for output LVDS1
+04/15/2014 02:20:49 PM - randr.c:output_init_con:256 - init_con for output LVDS1
+04/15/2014 02:20:49 PM - con.c:con_new_skeleton:64 - opening window 4
+04/15/2014 02:20:49 PM - con.c:con_new_skeleton:67 - color #00ffff
+04/15/2014 02:20:49 PM - con.c:con_attach:179 - Inserting con = 0xb514b0 after last focused tiling con 0xb50720
+04/15/2014 02:20:49 PM - x.c:x_con_init:152 - adding new state for window id 0x00800006
+04/15/2014 02:20:49 PM - randr.c:output_init_con:291 - Changing layout, adding top/bottom dockarea
+04/15/2014 02:20:49 PM - con.c:con_new_skeleton:64 - opening window 5
+04/15/2014 02:20:49 PM - con.c:con_new_skeleton:67 - color #ffff00
+04/15/2014 02:20:49 PM - x.c:x_con_init:152 - adding new state for window id 0x00800007
+04/15/2014 02:20:49 PM - randr.c:output_init_con:308 - attaching
+04/15/2014 02:20:49 PM - randr.c:output_init_con:313 - adding main content container
+04/15/2014 02:20:49 PM - con.c:con_new_skeleton:64 - opening window 6
+04/15/2014 02:20:49 PM - con.c:con_new_skeleton:67 - color #aa0000
+04/15/2014 02:20:49 PM - x.c:x_con_init:152 - adding new state for window id 0x00800008
+04/15/2014 02:20:49 PM - con.c:con_new_skeleton:64 - opening window 7
+04/15/2014 02:20:49 PM - con.c:con_new_skeleton:67 - color #00aa00
+04/15/2014 02:20:49 PM - x.c:x_con_init:152 - adding new state for window id 0x00800009
+04/15/2014 02:20:49 PM - randr.c:output_init_con:342 - attaching
+04/15/2014 02:20:49 PM - randr.c:randr_query_outputs:795 - Should add ws for output LVDS1
+04/15/2014 02:20:49 PM - randr.c:init_ws_for_output:452 - Now adding a workspace
+04/15/2014 02:20:49 PM - con.c:con_new_skeleton:64 - opening window 8
+04/15/2014 02:20:49 PM - con.c:con_new_skeleton:67 - color #0000aa
+04/15/2014 02:20:49 PM - x.c:x_con_init:152 - adding new state for window id 0x0080000a
+04/15/2014 02:20:49 PM - workspace.c:create_workspace_on_output:125 - binding with command exec --no-startup-id urxvt
+04/15/2014 02:20:49 PM - workspace.c:create_workspace_on_output:125 - binding with command exec -no-startup-id dmenu_run
+04/15/2014 02:20:49 PM - workspace.c:create_workspace_on_output:125 - binding with command focus left
+04/15/2014 02:20:49 PM - workspace.c:create_workspace_on_output:125 - binding with command focus down
+04/15/2014 02:20:49 PM - workspace.c:create_workspace_on_output:125 - binding with command focus up
+04/15/2014 02:20:49 PM - workspace.c:create_workspace_on_output:125 - binding with command focus right
+04/15/2014 02:20:49 PM - workspace.c:create_workspace_on_output:125 - binding with command focus left
+04/15/2014 02:20:49 PM - workspace.c:create_workspace_on_output:125 - binding with command focus down
+04/15/2014 02:20:49 PM - workspace.c:create_workspace_on_output:125 - binding with command focus up
+04/15/2014 02:20:49 PM - workspace.c:create_workspace_on_output:125 - binding with command focus right
+04/15/2014 02:20:49 PM - workspace.c:create_workspace_on_output:125 - binding with command layout stacking
+04/15/2014 02:20:49 PM - workspace.c:create_workspace_on_output:125 - binding with command layout tabbed
+04/15/2014 02:20:49 PM - workspace.c:create_workspace_on_output:125 - binding with command layout default
+04/15/2014 02:20:49 PM - workspace.c:create_workspace_on_output:125 - binding with command floating toggle
+04/15/2014 02:20:49 PM - workspace.c:create_workspace_on_output:125 - binding with command focus  mode_toggle
+04/15/2014 02:20:49 PM - workspace.c:create_workspace_on_output:125 - binding with command focus parent
+04/15/2014 02:20:49 PM - workspace.c:create_workspace_on_output:125 - binding with command workspace 1
+04/15/2014 02:20:49 PM - workspace.c:create_workspace_on_output:129 - relevant command = workspace 1
+04/15/2014 02:20:49 PM - workspace.c:create_workspace_on_output:152 - trying name *1*
+04/15/2014 02:20:49 PM - Used number 1 for workspace with name 1
+04/15/2014 02:20:49 PM - con.c:con_attach:114 - it's a workspace. num = 1
+04/15/2014 02:20:49 PM - workspace.c:_workspace_apply_default_orientation:35 - Auto orientation. Workspace size set to (1366,768), setting layout to 6.
+04/15/2014 02:20:49 PM - con.c:con_focus:214 - con_focus = 0xb51d50
+04/15/2014 02:20:49 PM - con.c:con_focus:214 - con_focus = 0xb518e0
+04/15/2014 02:20:49 PM - con.c:con_focus:214 - con_focus = 0xb514b0
+04/15/2014 02:20:49 PM - tree.c:tree_render:505 - -- BEGIN RENDERING --
+04/15/2014 02:20:49 PM - render.c:render_con:130 - Rendering node 0xb50520 / root / layout 6 / children 2
+04/15/2014 02:20:49 PM - render.c:render_con:130 - Rendering node 0xb50720 / __i3 / layout 4 / children 1
+04/15/2014 02:20:49 PM - render.c:render_con:130 - Rendering node 0xb514b0 / LVDS1 / layout 4 / children 3
+04/15/2014 02:20:49 PM - render.c:render_l_output:112 - child at (0, 0) with (1366 x 0)
+04/15/2014 02:20:49 PM - render.c:render_con:130 - Rendering node 0xb51690 / topdock / layout 3 / children 0
+04/15/2014 02:20:49 PM - render.c:render_l_output:112 - child at (0, 0) with (1366 x 768)
+04/15/2014 02:20:49 PM - render.c:render_con:130 - Rendering node 0xb518e0 / content / layout 6 / children 1
+04/15/2014 02:20:49 PM - render.c:render_con:130 - Rendering fullscreen node 0xb51d50 / 1 / layout 6 / children 0
+04/15/2014 02:20:49 PM - render.c:render_l_output:112 - child at (0, 768) with (1366 x 0)
+04/15/2014 02:20:49 PM - render.c:render_con:130 - Rendering node 0xb51b00 / bottomdock / layout 3 / children 0
+04/15/2014 02:20:49 PM - render.c:render_con:258 - Rendering floating windows:
+04/15/2014 02:20:49 PM - x.c:x_push_changes:858 - -- PUSHING WINDOW STACK --
+04/15/2014 02:20:49 PM - x.c:x_push_changes:915 - PUSHING CHANGES
+04/15/2014 02:20:49 PM - x.c:x_push_node:610 - pushing name [i3 con] output LVDS1 for con 0xb514b0
+04/15/2014 02:20:49 PM - x.c:x_push_node:610 - pushing name [i3 con] content LVDS1 for con 0xb518e0
+04/15/2014 02:20:49 PM - x.c:x_push_node:610 - pushing name [i3 con] workspace 1 for con 0xb51d50
+04/15/2014 02:20:49 PM - x.c:x_push_node:610 - pushing name [i3 con] top dockarea LVDS1 for con 0xb51690
+04/15/2014 02:20:49 PM - x.c:x_push_node:610 - pushing name [i3 con] bottom dockarea LVDS1 for con 0xb51b00
+04/15/2014 02:20:49 PM - x.c:x_push_node:610 - pushing name [i3 con] pseudo-output __i3 for con 0xb50720
+04/15/2014 02:20:49 PM - x.c:x_push_node:610 - pushing name [i3 con] content __i3 for con 0xb50900
+04/15/2014 02:20:49 PM - x.c:x_push_node:610 - pushing name [i3 con] workspace __i3_scratch for con 0xb50d60
+04/15/2014 02:20:49 PM - x.c:x_push_changes:954 - Not updating focus (to 0xb51d50 / 1), focused window is not mapped.
+04/15/2014 02:20:49 PM - x.c:x_push_changes:991 - Still no window focused, better set focus to the root window
+04/15/2014 02:20:49 PM - x.c:x_push_changes:997 - ENDING CHANGES
+04/15/2014 02:20:49 PM - tree.c:tree_render:514 - -- END RENDERING --
+04/15/2014 02:20:49 PM - scratchpad.c:scratchpad_fix_resolution:249 - Current resolution: (0, 0) 1280 x 1024
+04/15/2014 02:20:49 PM - scratchpad.c:scratchpad_fix_resolution:258 - output LVDS1's resolution: (0, 0) 1366 x 768
+04/15/2014 02:20:49 PM - scratchpad.c:scratchpad_fix_resolution:271 - new width = 1366, new height = 768
+04/15/2014 02:20:49 PM - scratchpad.c:scratchpad_fix_resolution:282 - Fixing coordinates of scratchpad windows
+04/15/2014 02:20:49 PM - main.c:main:677 - Pointer at 683, 404
+04/15/2014 02:20:49 PM - randr.c:get_output_containing:86 - comparing x=683 y=404 with x=0 and y=0 width 1366 height 768
+04/15/2014 02:20:49 PM - con.c:con_focus:214 - con_focus = 0xb51d50
+04/15/2014 02:20:49 PM - con.c:con_focus:214 - con_focus = 0xb518e0
+04/15/2014 02:20:49 PM - con.c:con_focus:214 - con_focus = 0xb514b0
+04/15/2014 02:20:49 PM - tree.c:tree_render:505 - -- BEGIN RENDERING --
+04/15/2014 02:20:49 PM - render.c:render_con:130 - Rendering node 0xb50520 / root / layout 6 / children 2
+04/15/2014 02:20:49 PM - render.c:render_con:130 - Rendering node 0xb50720 / __i3 / layout 4 / children 1
+04/15/2014 02:20:49 PM - render.c:render_con:130 - Rendering node 0xb514b0 / LVDS1 / layout 4 / children 3
+04/15/2014 02:20:49 PM - render.c:render_l_output:112 - child at (0, 0) with (1366 x 0)
+04/15/2014 02:20:49 PM - render.c:render_con:130 - Rendering node 0xb51690 / topdock / layout 3 / children 0
+04/15/2014 02:20:49 PM - render.c:render_l_output:112 - child at (0, 0) with (1366 x 768)
+04/15/2014 02:20:49 PM - render.c:render_con:130 - Rendering node 0xb518e0 / content / layout 6 / children 1
+04/15/2014 02:20:49 PM - render.c:render_con:130 - Rendering fullscreen node 0xb51d50 / 1 / layout 6 / children 0
+04/15/2014 02:20:49 PM - render.c:render_l_output:112 - child at (0, 768) with (1366 x 0)
+04/15/2014 02:20:49 PM - render.c:render_con:130 - Rendering node 0xb51b00 / bottomdock / layout 3 / children 0
+04/15/2014 02:20:49 PM - render.c:render_con:258 - Rendering floating windows:
+04/15/2014 02:20:49 PM - x.c:x_push_changes:858 - -- PUSHING WINDOW STACK --
+04/15/2014 02:20:49 PM - x.c:x_push_changes:915 - PUSHING CHANGES
+04/15/2014 02:20:49 PM - x.c:x_push_changes:954 - Not updating focus (to 0xb51d50 / 1), focused window is not mapped.
+04/15/2014 02:20:49 PM - x.c:x_push_changes:991 - Still no window focused, better set focus to the root window
+04/15/2014 02:20:49 PM - x.c:x_push_changes:997 - ENDING CHANGES
+04/15/2014 02:20:49 PM - tree.c:tree_render:514 - -- END RENDERING --
+04/15/2014 02:20:49 PM - ipc.c:ipc_create_socket:922 - Creating IPC-socket at /run/user/1000/i3/ipc-socket.4133
+04/15/2014 02:20:49 PM - main.c:main:708 - socket activation: no sockets passed
+04/15/2014 02:20:49 PM - auto-starting ~/.i3/scripts/autostart.sh
+04/15/2014 02:20:49 PM - executing: ~/.i3/scripts/autostart.sh
+04/15/2014 02:20:49 PM - Starting bar process: i3bar --bar_id=bar-0 --socket="/run/user/1000/i3/ipc-socket.4133"
+04/15/2014 02:20:49 PM - executing: i3bar --bar_id=bar-0 --socket="/run/user/1000/i3/ipc-socket.4133"
+/bin/bash: /home/kj/.i3/scripts/autostart.sh: Permission denied
+04/15/2014 02:20:49 PM - ipc.c:ipc_new_client:903 - IPC: new client connected on fd 10
+04/15/2014 02:20:49 PM - IPC: looking for config for bar ID "bar-0"
+04/15/2014 02:20:49 PM - ipc.c:add_subscription:741 - should add subscription to extra 0xb511d0, sub workspace
+04/15/2014 02:20:49 PM - ipc.c:add_subscription:751 - client is now subscribed to:
+04/15/2014 02:20:49 PM - ipc.c:add_subscription:753 - event workspace
+04/15/2014 02:20:49 PM - ipc.c:add_subscription:754 - (done)
+04/15/2014 02:20:49 PM - ipc.c:add_subscription:741 - should add subscription to extra 0xb511d0, sub output
+04/15/2014 02:20:49 PM - ipc.c:add_subscription:751 - client is now subscribed to:
+04/15/2014 02:20:49 PM - ipc.c:add_subscription:753 - event workspace
+04/15/2014 02:20:49 PM - ipc.c:add_subscription:753 - event output
+04/15/2014 02:20:49 PM - ipc.c:add_subscription:754 - (done)
+04/15/2014 02:20:49 PM - ipc.c:add_subscription:741 - should add subscription to extra 0xb511d0, sub mode
+04/15/2014 02:20:49 PM - ipc.c:add_subscription:751 - client is now subscribed to:
+04/15/2014 02:20:49 PM - ipc.c:add_subscription:753 - event workspace
+04/15/2014 02:20:49 PM - ipc.c:add_subscription:753 - event output
+04/15/2014 02:20:49 PM - ipc.c:add_subscription:753 - event mode
+04/15/2014 02:20:49 PM - ipc.c:add_subscription:754 - (done)
+04/15/2014 02:20:49 PM - ipc.c:add_subscription:741 - should add subscription to extra 0xb511d0, sub barconfig_update
+04/15/2014 02:20:49 PM - ipc.c:add_subscription:751 - client is now subscribed to:
+04/15/2014 02:20:49 PM - ipc.c:add_subscription:753 - event workspace
+04/15/2014 02:20:49 PM - ipc.c:add_subscription:753 - event output
+04/15/2014 02:20:49 PM - ipc.c:add_subscription:753 - event mode
+04/15/2014 02:20:49 PM - ipc.c:add_subscription:753 - event barconfig_update
+04/15/2014 02:20:49 PM - ipc.c:add_subscription:754 - (done)
+04/15/2014 02:20:49 PM - workspace visible? fs = 0xb51d50, ws = 0xb51d50
+04/15/2014 02:20:49 PM - handlers.c:handle_map_request:276 - window = 0x00e00001, serial is 306.
+04/15/2014 02:20:49 PM - manage.c:manage_window:193 - Managing window 0x00e00001
+04/15/2014 02:20:49 PM - window.c:window_update_class:21 - WM_CLASS not set.
+04/15/2014 02:20:49 PM - window.c:window_update_name_legacy:90 - WM_NAME not set (_NET_WM_NAME is what you want anyways).
+04/15/2014 02:20:49 PM - window.c:window_update_name:58 - _NET_WM_NAME not specified, not changing
+04/15/2014 02:20:49 PM - window.c:window_update_leader:127 - CLIENT_LEADER not set.
+04/15/2014 02:20:49 PM - window.c:window_update_transient_for:151 - TRANSIENT_FOR not set.
+04/15/2014 02:20:49 PM - window.c:window_update_strut_partial:187 - Reserved pixels changed to: left = 0, right = 0, top = 21, bottom = 0
+04/15/2014 02:20:49 PM - window.c:window_update_role:200 - WM_WINDOW_ROLE not set.
+04/15/2014 02:20:49 PM - window.c:window_update_hints:233 - WM_HINTS not set.
+04/15/2014 02:20:49 PM - startup.c:startup_sequence_get:276 - No _NET_STARTUP_ID set on window 0x00e00001
+04/15/2014 02:20:49 PM - manage.c:manage_window:228 - startup workspace = (null)
+04/15/2014 02:20:49 PM - This window is of type dock
+04/15/2014 02:20:49 PM - randr.c:get_output_containing:86 - comparing x=50 y=50 with x=0 and y=0 width 1366 height 768
+04/15/2014 02:20:49 PM - manage.c:manage_window:241 - Starting search at output LVDS1
+04/15/2014 02:20:49 PM - manage.c:manage_window:247 - Top dock client
+04/15/2014 02:20:49 PM - manage.c:manage_window:266 - Initial geometry: (50, 50, 500, 31)
+04/15/2014 02:20:49 PM - Checking window 0x00e00001 (class (null))
+04/15/2014 02:20:49 PM - dock status matches
+04/15/2014 02:20:49 PM - con.c:con_new_skeleton:64 - opening window 9
+04/15/2014 02:20:49 PM - con.c:con_new_skeleton:67 - color #aa00aa
+04/15/2014 02:20:49 PM - x.c:x_con_init:152 - adding new state for window id 0x0080000b
+04/15/2014 02:20:49 PM - manage.c:manage_window:313 - new container = 0xb54200
+04/15/2014 02:20:49 PM - x.c:x_reinit:169 - resetting state 0xb522a0 to initial
+04/15/2014 02:20:49 PM - manage.c:manage_window:330 - Not in fullscreen mode, focusing
+04/15/2014 02:20:49 PM - manage.c:manage_window:343 - dock, not focusing
+04/15/2014 02:20:49 PM - assignments.c:run_assignments:20 - Checking if any assignments match this window
+04/15/2014 02:20:49 PM - tree.c:tree_render:505 - -- BEGIN RENDERING --
+04/15/2014 02:20:49 PM - render.c:render_con:130 - Rendering node 0xb50520 / root / layout 6 / children 2
+04/15/2014 02:20:49 PM - render.c:render_con:130 - Rendering node 0xb50720 / __i3 / layout 4 / children 1
+04/15/2014 02:20:49 PM - render.c:render_con:130 - Rendering node 0xb514b0 / LVDS1 / layout 4 / children 3
+04/15/2014 02:20:49 PM - render.c:render_l_output:112 - child at (0, 0) with (1366 x 31)
+04/15/2014 02:20:49 PM - render.c:render_con:130 - Rendering node 0xb51690 / topdock / layout 3 / children 1
+04/15/2014 02:20:49 PM - render.c:render_con:410 - child at (0, 0) with (1366 x 31)
+04/15/2014 02:20:49 PM - render.c:render_con:130 - Rendering node 0xb54200 / #aa00aa / layout 6 / children 0
+04/15/2014 02:20:49 PM - con.c:con_border_style_rect:1076 - The border width for con is set to: -1
+04/15/2014 02:20:49 PM - con.c:con_border_style_rect:1080 - Effective border width is set to: 2
+04/15/2014 02:20:49 PM - render.c:render_con:201 - child will be at 0x0 with size 1366x31
+04/15/2014 02:20:49 PM - render.c:render_l_output:112 - child at (0, 31) with (1366 x 737)
+04/15/2014 02:20:49 PM - render.c:render_con:130 - Rendering node 0xb518e0 / content / layout 6 / children 1
+04/15/2014 02:20:49 PM - render.c:render_con:130 - Rendering fullscreen node 0xb51d50 / 1 / layout 6 / children 0
+04/15/2014 02:20:49 PM - render.c:render_l_output:112 - child at (0, 768) with (1366 x 0)
+04/15/2014 02:20:49 PM - render.c:render_con:130 - Rendering node 0xb51b00 / bottomdock / layout 3 / children 0
+04/15/2014 02:20:49 PM - render.c:render_con:258 - Rendering floating windows:
+04/15/2014 02:20:49 PM - x.c:x_push_changes:858 - -- PUSHING WINDOW STACK --
+04/15/2014 02:20:49 PM - x.c:x_push_changes:915 - PUSHING CHANGES
+04/15/2014 02:20:49 PM - x.c:x_push_node:610 - pushing name [i3 con] container around 0xb51f90 for con 0xb54200
+04/15/2014 02:20:49 PM - x.c:x_push_node:709 - setting rect (0, 0, 1366, 31)
+04/15/2014 02:20:49 PM - x.c:x_push_node:728 - setting window rect (0, 0, 1366, 31)
+04/15/2014 02:20:49 PM - x.c:x_push_node:758 - mapping child window (serial 345)
+04/15/2014 02:20:49 PM - x.c:x_push_node:772 - mapping container 0080000b (serial 347)
+04/15/2014 02:20:49 PM - x.c:x_push_node:779 - Sending fake configure notify
+04/15/2014 02:20:49 PM - xcb.c:fake_absolute_configure_notify:104 - fake rect = (0, 0, 1366, 31)
+04/15/2014 02:20:49 PM - x.c:x_push_changes:954 - Not updating focus (to 0xb51d50 / 1), focused window is not mapped.
+04/15/2014 02:20:49 PM - x.c:x_push_changes:991 - Still no window focused, better set focus to the root window
+04/15/2014 02:20:49 PM - x.c:x_push_changes:997 - ENDING CHANGES
+04/15/2014 02:20:49 PM - tree.c:tree_render:514 - -- END RENDERING --
+04/15/2014 02:20:49 PM - x.c:x_push_changes:858 - -- PUSHING WINDOW STACK --
+04/15/2014 02:20:49 PM - x.c:x_push_changes:915 - PUSHING CHANGES
+04/15/2014 02:20:49 PM - x.c:x_push_changes:954 - Not updating focus (to 0xb51d50 / 1), focused window is not mapped.
+04/15/2014 02:20:49 PM - x.c:x_push_changes:991 - Still no window focused, better set focus to the root window
+04/15/2014 02:20:49 PM - x.c:x_push_changes:997 - ENDING CHANGES
+04/15/2014 02:20:49 PM - handlers.c:handle_map_request:276 - window = 0x01000007, serial is 355.
+04/15/2014 02:20:49 PM - manage.c:manage_window:193 - Managing window 0x01000007
+04/15/2014 02:20:49 PM - WM_CLASS changed to i3bar (instance), i3bar (class)
+04/15/2014 02:20:49 PM - WM_NAME changed to "i3bar for output LVDS1"
+04/15/2014 02:20:49 PM - Using legacy window title. Note that in order to get Unicode window titles in i3, the application has to set _NET_WM_NAME (UTF-8)
+04/15/2014 02:20:49 PM - window.c:window_update_name:58 - _NET_WM_NAME not specified, not changing
+04/15/2014 02:20:49 PM - window.c:window_update_leader:127 - CLIENT_LEADER not set.
+04/15/2014 02:20:49 PM - window.c:window_update_transient_for:151 - TRANSIENT_FOR not set.
+04/15/2014 02:20:49 PM - window.c:window_update_strut_partial:187 - Reserved pixels changed to: left = 0, right = 0, top = 21, bottom = 0
+04/15/2014 02:20:49 PM - window.c:window_update_role:200 - WM_WINDOW_ROLE not set.
+04/15/2014 02:20:49 PM - window.c:window_update_hints:233 - WM_HINTS not set.
+04/15/2014 02:20:49 PM - startup.c:startup_sequence_get:276 - No _NET_STARTUP_ID set on window 0x01000007
+04/15/2014 02:20:49 PM - manage.c:manage_window:228 - startup workspace = (null)
+04/15/2014 02:20:49 PM - This window is of type dock
+04/15/2014 02:20:49 PM - randr.c:get_output_containing:86 - comparing x=0 y=747 with x=0 and y=0 width 1366 height 768
+04/15/2014 02:20:49 PM - manage.c:manage_window:241 - Starting search at output LVDS1
+04/15/2014 02:20:49 PM - manage.c:manage_window:247 - Top dock client
+04/15/2014 02:20:49 PM - manage.c:manage_window:266 - Initial geometry: (0, 747, 1366, 21)
+04/15/2014 02:20:49 PM - Checking window 0x01000007 (class i3bar)
+04/15/2014 02:20:49 PM - dock status matches
+04/15/2014 02:20:49 PM - con.c:con_new_skeleton:64 - opening window 0
+04/15/2014 02:20:49 PM - con.c:con_new_skeleton:67 - color #ff0000
+04/15/2014 02:20:49 PM - con.c:con_attach:179 - Inserting con = 0xb54510 after last focused tiling con 0xb54200
+04/15/2014 02:20:49 PM - x.c:x_con_init:152 - adding new state for window id 0x0080000e
+04/15/2014 02:20:49 PM - manage.c:manage_window:313 - new container = 0xb54510
+04/15/2014 02:20:49 PM - x.c:x_reinit:169 - resetting state 0xb54680 to initial
+04/15/2014 02:20:49 PM - manage.c:manage_window:330 - Not in fullscreen mode, focusing
+04/15/2014 02:20:49 PM - manage.c:manage_window:343 - dock, not focusing
+04/15/2014 02:20:49 PM - assignments.c:run_assignments:20 - Checking if any assignments match this window
+04/15/2014 02:20:49 PM - tree.c:tree_render:505 - -- BEGIN RENDERING --
+04/15/2014 02:20:49 PM - render.c:render_con:130 - Rendering node 0xb50520 / root / layout 6 / children 2
+04/15/2014 02:20:49 PM - render.c:render_con:130 - Rendering node 0xb50720 / __i3 / layout 4 / children 1
+04/15/2014 02:20:49 PM - render.c:render_con:130 - Rendering node 0xb514b0 / LVDS1 / layout 4 / children 3
+04/15/2014 02:20:49 PM - render.c:render_l_output:112 - child at (0, 0) with (1366 x 52)
+04/15/2014 02:20:49 PM - render.c:render_con:130 - Rendering node 0xb51690 / topdock / layout 3 / children 2
+04/15/2014 02:20:49 PM - render.c:render_con:410 - child at (0, 0) with (1366 x 31)
+04/15/2014 02:20:49 PM - render.c:render_con:130 - Rendering node 0xb54200 / #aa00aa / layout 6 / children 0
+04/15/2014 02:20:49 PM - con.c:con_border_style_rect:1076 - The border width for con is set to: -1
+04/15/2014 02:20:49 PM - con.c:con_border_style_rect:1080 - Effective border width is set to: 2
+04/15/2014 02:20:49 PM - render.c:render_con:201 - child will be at 0x0 with size 1366x31
+04/15/2014 02:20:49 PM - render.c:render_con:410 - child at (0, 31) with (1366 x 21)
+04/15/2014 02:20:49 PM - render.c:render_con:130 - Rendering node 0xb54510 / #ff0000 / layout 6 / children 0
+04/15/2014 02:20:49 PM - con.c:con_border_style_rect:1076 - The border width for con is set to: -1
+04/15/2014 02:20:49 PM - con.c:con_border_style_rect:1080 - Effective border width is set to: 2
+04/15/2014 02:20:49 PM - render.c:render_con:201 - child will be at 0x0 with size 1366x21
+04/15/2014 02:20:49 PM - render.c:render_l_output:112 - child at (0, 52) with (1366 x 716)
+04/15/2014 02:20:49 PM - render.c:render_con:130 - Rendering node 0xb518e0 / content / layout 6 / children 1
+04/15/2014 02:20:49 PM - render.c:render_con:130 - Rendering fullscreen node 0xb51d50 / 1 / layout 6 / children 0
+04/15/2014 02:20:49 PM - render.c:render_l_output:112 - child at (0, 768) with (1366 x 0)
+04/15/2014 02:20:49 PM - render.c:render_con:130 - Rendering node 0xb51b00 / bottomdock / layout 3 / children 0
+04/15/2014 02:20:49 PM - render.c:render_con:258 - Rendering floating windows:
+04/15/2014 02:20:49 PM - x.c:x_push_changes:858 - -- PUSHING WINDOW STACK --
+04/15/2014 02:20:49 PM - x.c:x_push_changes:915 - PUSHING CHANGES
+04/15/2014 02:20:49 PM - x.c:x_push_node:610 - pushing name [i3 con] container around 0xb520c0 for con 0xb54510
+04/15/2014 02:20:49 PM - x.c:x_push_node:709 - setting rect (0, 31, 1366, 21)
+04/15/2014 02:20:49 PM - x.c:x_push_node:728 - setting window rect (0, 0, 1366, 21)
+04/15/2014 02:20:49 PM - x.c:x_push_node:758 - mapping child window (serial 395)
+04/15/2014 02:20:49 PM - x.c:x_push_node:772 - mapping container 0080000e (serial 397)
+04/15/2014 02:20:49 PM - x.c:x_push_node:779 - Sending fake configure notify
+04/15/2014 02:20:49 PM - xcb.c:fake_absolute_configure_notify:104 - fake rect = (0, 31, 1366, 21)
+04/15/2014 02:20:49 PM - x.c:x_push_changes:954 - Not updating focus (to 0xb51d50 / 1), focused window is not mapped.
+04/15/2014 02:20:49 PM - x.c:x_push_changes:991 - Still no window focused, better set focus to the root window
+04/15/2014 02:20:49 PM - x.c:x_push_changes:997 - ENDING CHANGES
+04/15/2014 02:20:49 PM - tree.c:tree_render:514 - -- END RENDERING --
+04/15/2014 02:20:49 PM - x.c:x_push_changes:858 - -- PUSHING WINDOW STACK --
+04/15/2014 02:20:49 PM - x.c:x_push_changes:915 - PUSHING CHANGES
+04/15/2014 02:20:49 PM - x.c:x_push_changes:954 - Not updating focus (to 0xb51d50 / 1), focused window is not mapped.
+04/15/2014 02:20:49 PM - x.c:x_push_changes:991 - Still no window focused, better set focus to the root window
+04/15/2014 02:20:49 PM - x.c:x_push_changes:997 - ENDING CHANGES
+04/15/2014 02:20:49 PM - ClientMessage for window 0x00000093
+04/15/2014 02:20:49 PM - handlers.c:handle_client_message:734 - unhandled clientmessage
+/bin/bash: /home/kj/.i3/conky: Permission denied
+[i3bar/src/child.c:355] ERROR: Child (pid: 4203) unexpectedly exited with status 32256
+04/15/2014 02:20:52 PM - main.c:xkb_got_event:153 - Handling XKB event
+04/15/2014 02:20:53 PM - main.c:xkb_got_event:153 - Handling XKB event
+04/15/2014 02:20:53 PM - key_press.c:handle_key_press:78 - KeyPress 53, state raw = 65
+04/15/2014 02:20:53 PM - key_press.c:handle_key_press:82 - (removed numlock, state = 65)
+04/15/2014 02:20:53 PM - key_press.c:handle_key_press:86 - (removed upper 8 bits, state = 65)
+04/15/2014 02:20:53 PM - key_press.c:handle_key_press:91 - (checked mode_switch, state 65)
+04/15/2014 02:20:53 PM - commands_parser.c:parse_command:209 - COMMAND: *exit*
+04/15/2014 02:20:53 PM - commands.c:cmd_criteria_init:240 - Initializing criteria, current_match = 0x64a3c0
+04/15/2014 02:20:53 PM - Exiting due to user command.
+04/15/2014 02:20:53 PM - Sending SIGKILL (9) to i3-nagbar with PID 4198
+[libi3] libi3/font.c Using Pango font Terminus, size 9
