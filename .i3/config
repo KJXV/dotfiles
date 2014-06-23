@@ -1,0 +1,201 @@
+# i3 config file (v4)
+#
+# Please see http://i3wm.org/docs/userguide.html for a complete reference.
+
+# Variables
+set $mod Mod4
+set $term urxvt
+
+# xfwm4
+for_window [class="Xfce4-notifyd"] floating enable;border none; focus mode_toggle
+
+# The --no-startup-id parameter disables startup-notification support for this
+# particular exec command. With startup-notification, i3 can make sure that a window
+# appears on the workspace on which you used the exec command. Also, it will change
+# the X11 cursor to watch (a clock) while the application is launching. So, if an
+# application is not startup-notification aware (most GTK and Qt using applications
+# seem to be, though), you will end up with a watch cursor for 60 seconds.
+#
+# exec [--no-startup-id] <command>
+
+# Autostart
+exec --no-startup-id ~/.i3/scripts/autostart.sh
+
+# Program key-bindings
+bindsym $mod+Return exec --no-startup-id $term
+bindsym $mod+e exec --no-startup-id "urxvtc -e alsamixer"
+bindsym $mod+d exec --no-startup-id dmenu_run
+# There also is the (new) i3-dmenu-desktop which only displays applications
+# shipping a .desktop file. It is a wrapper around dmenu, so you need that
+# installed.
+# bindsym $mod+d exec --no-startup-id i3-dmenu-desktop
+
+# Font for window titles
+#
+# font <X core font description>
+# font pango:[family list] [style options] [size]
+font xft:Terminus 9.5
+
+# Mouse can't interact with inactive/unfocused windows.
+# This is useful if you're on a laptop, doing a presentation,
+# or anything else where a wandering mouse could interfere.
+#
+# focus_follows mouse <yes|no>
+focus_follows_mouse no
+
+# Color scheme
+# class                  border   background  text     indicator
+client.focused           #282d76  #181b46     #ffffff  #3d4283
+client.focused_inactive  #333333  #5f676a     #ffffff  #484e50
+client.unfocused         #333333  #222222     #888888  #292d2e
+client.urgent            #2f343a  #900000     #ffffff  #900000
+
+# Use Mouse+$mod to drag floating windows to their desired position.
+floating_modifier $mod
+
+# Kill focused window
+bindsym $mod+Shift+k kill
+
+# Dvorak-Vim-style change-focus keys
+bindsym $mod+h focus left
+bindsym $mod+t focus down
+bindsym $mod+n focus up
+bindsym $mod+s focus right
+
+# Move focused window
+bindsym $mod+Shift+h focus left
+bindsym $mod+Shift+t focus down
+bindsym $mod+Shift+n focus up
+bindsym $mod+Shift+s focus right
+
+# Split orientation
+# Horizontal
+bindsym $mod+z split h
+# Vertical
+bindsym $mod+v split v
+
+# Enter fullscreen mode for the focused container
+bindsym $mod+f fullscreen
+
+# Change the container layout (stacked, tabbed, default)
+bindsym $mod+apostrophe layout stacking
+bindsym $mod+comma layout tabbed
+bindsym $mod+period layout default
+
+# Toggle tiling / floating containers
+bindsym $mod+Shift+space floating toggle
+
+# Change focus between tiling / floating windows
+bindsym $mod+space focus mode_toggle
+
+# Focus on parent container
+bindsym $mod+a focus parent
+
+# Focus on child window
+bindsym $mod+o focus child
+
+# Workspace switching
+bindsym $mod+1 workspace 1
+bindsym $mod+2 workspace 2
+bindsym $mod+3 workspace 3
+bindsym $mod+4 workspace 4
+bindsym $mod+5 workspace 5
+bindsym $mod+6 workspace 6
+bindsym $mod+7 workspace 7
+bindsym $mod+8 workspace 8
+bindsym $mod+9 workspace 9
+bindsym $mod+0 workspace 10
+
+# Move focused container to worspace
+bindsym $mod+Shift+1 move container to workspace 1
+bindsym $mod+Shift+2 move container to workspace 2
+bindsym $mod+Shift+3 move container to workspace 3
+bindsym $mod+Shift+4 move container to workspace 4
+bindsym $mod+Shift+5 move container to workspace 5
+bindsym $mod+Shift+6 move container to workspace 6
+bindsym $mod+Shift+7 move container to workspace 7
+bindsym $mod+Shift+8 move container to workspace 8
+bindsym $mod+Shift+9 move container to workspace 9
+bindsym $mod+Shift+0 move container to workspace 10
+#bindsym $mod+Shift+exclam move container to workspace 1
+#bindsym $mod+Shift+at move container to workspace 2
+#bindsym $mod+Shift+numbersign move container to workspace 3
+#bindsym $mod+Shift+dollar move container to workspace 4
+#bindsym $mod+Shift+percent move container to workspace 5
+#bindsym $mod+Shift+asciicircum move container to workspace 6
+#bindsym $mod+Shift+ampersand move container to workspace 7
+#bindsym $mod+Shift+asterisk move container to workspace 8
+#bindsym $mod+Shift+parenleft move container to workspace 9
+#bindsym $mod+Shift+parenright move container to workspace 10
+
+# Reload this config file
+bindsym $mod+Shift+J reload
+
+# Restart i3 inplace (preserves containers/session)
+# Useful for upgrades
+bindsym $mod+Shift+R restart
+
+# Exit i3 (logs out of current X session)
+# remap the exit command to properly exit Xfce
+bindsym $mod+Shift+X exec xfce4-session-logout
+bindsym $mod+Shift+Q exit
+
+# Resize focused window
+mode "resize" {
+	# These bindings trigger when entering resize mode
+	
+	# Pressing left will shrink window's width.
+	# Pressing right will enlarge the window's width.
+	# Pressing up will shrink the window's height.
+	# Pressing down will enlarge the window's height.
+	
+	bindsym h resize shrink width 10 px or 10 ppt
+	bindsym s resive grow width 10 px or 10 ppt
+	bindsym t resize shrink height 10 px or 10 ppt
+	bindsym n resize grow height 10 px or 10 ppt
+	
+	# Escape exits into normal mode
+	bindsym Escape mode "default"
+}
+bindsym $mod+r mode "resize"
+
+############
+
+# i3bar config
+#
+# Please see http://i3wm.org/docs/userguide.html#_configuring_i3bar
+# for a complete reference.
+
+# Start i3bar to display a workspace bar
+bar {
+
+	colors {
+		# class             border   background  text
+		background                   #000000
+		statusline                               #ffffff
+		focused_workspace   #282d76  #181b46     #ffffff
+		active_workspace    #333333  #5f676a     #ffffff
+		inactive_workspace  #333333  #222222     #888888
+		urgent_workspace    #2f343a  #900000     #ffffff
+	}
+	# Tray position
+	# position <top|bottom>
+	position top
+	
+	# i3bar by default provides a system tray area where programs such as
+	# NetworkManager, VLC, Pidgin, etc. can place little icons.
+	#
+	# tray_output <none|primary|output>
+	tray_output primary
+	
+	# font <X core font description>
+	# font pango:[family list] [style options] [size]
+	# Not recommended with conky
+	
+	# Start i3status for a clock. Conky handles the rest.
+	#
+	# i3status --config ~/.i3/path/to/file
+	# or conky
+	status_command ~/.i3/conky
+	
+}

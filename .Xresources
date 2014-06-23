@@ -1,0 +1,50 @@
+! Font
+URxvt.font: xft:Terminus:size=9.5
+URxvt.letterSpace: -5
+Xft.hinting : true
+Xft.antialias : false
+
+! Transparency
+! To use true transparency, you need to be using a window manager that
+! supports compositing or a separate compositor. 
+!
+! URxvt.depth: 32
+! URxvt.background: [95]#000000
+! where '95' is the opacity level in percentage and '#000000' is the
+! background color.
+!
+! If there is no need for true transparency, or if compositing uses too
+! many resources on your system, you can get transparency working in the
+! following way:
+URxvt.foreground: #6c71c4
+URxvt.background: [33]#002b36
+URxvt*.transparent: true
+! URxvt*.shading: 0 to 99 darkens, 101 to 200 lightens
+URxvt*.shading: 33
+
+! Scrolling
+! scrollbar style - rxvt (default), plain (most compact), next, or xterm
+URxvt.scrollstyle: rxvt
+URxvt.scrollBar : false
+! By default, when shell output appears the scrollback view will
+! automatically jump to the bottom of the buffer to display new
+! output. If in cases where you want to see previous output
+! (e.g., compiler messages), set the following options.
+!
+! do not scroll with output
+URxvt*scrollTtyOutput: false
+!
+! scroll in relation to buffer (with mouse scroll or Shift+Page Up)
+URxvt*scrollWithBuffer: true
+!
+! scroll back to the bottom on keypress
+URxvt*scrollTtyKeypress: true
+!
+! scrollback history
+URxvt.saveLines : 12000
+
+! Clickable URLS
+URxvt.perl-ext-common: default,matcher
+URxvt.url-launcher: /usr/bin/firefox
+URxvt.matcher.button: 1
+URxvt.colorUL: #4682B4
