@@ -13,7 +13,11 @@ TEXT
 
 # Finds out if cmus is running. If it is, it provides the current artist,
 # and the current track. If cmus isn't running it outputs "Not Running"
+<<<<<<< HEAD
+#  {"full_text": " [${exec sh ~/.i3/scripts/cmusconky.sh}] ", "color":"\#e4f800"},
+=======
   {"full_text": " [${exec sh ~/.i3/scripts/cmusconky.sh}] ", "color":"\#e4f800"},
+>>>>>>> d554a2b8fcc012fd8942d4d788630a67a79e3cae
   
 # Finds current volume. May need modified depending on your setup
 #  {"full_text": " ♪ ${exec amixer get Master | grep -o "\[.*%\]"} ", "color":"\#268BD2"},
