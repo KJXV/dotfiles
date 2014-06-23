@@ -1,1 +1,91 @@
-.i3/conkyrc~
+# Compiled source
+*.com
+*.class
+*.dll
+*.exe
+*.o
+*.so
+ 
+# Packages
+# it's better to unpack these files and commit the raw source
+# git has its own built in compression methods
+*.7z
+*.dmg
+*.gz
+*.iso
+*.jar
+*.rar
+*.tar
+*.zip
+ 
+# Logs, databases, and backups
+*.log
+*.sql
+*.sqlite
+*.bak
+*.swp
+*.pyo
+*.pyc
+*~
+ 
+# OS generated files
+.DS_Store
+.DS_Store?
+._*
+.Spotlight-V100
+.Trashes
+ehthumbs.db
+Thumbs.db
+*.lock
+
+# Personal files
+# an awful, ugly list but it must be done
+.adobe
+.aptitude
+Audiobooks
+.bash_history
+.bash_logout
+.bashrc
+.cache
+.cinnamon
+.cmus
+.config
+.dbus
+Desktop
+.dmenu_cache
+.dmrc
+Documents
+Downloads
+.esd_auth
+fidentify.log
+.fonts.conf
+.gconf
+.gimp-2.8
+.gnome2
+.gnupg
+.gstreamer-0.10
+.ICEauthority
+.lesshst
+.linuxmint
+.local
+.macromedia
+.mate2
+.mozilla
+Music
+Pictures
+Podcasts
+Public
+.ssh
+Templates
+.thumbnails
+.thunderbird
+.urxvt
+Videos
+.viminfo
+.VirtualBox
+.w3m
+.xsession
+.xsession-errors
+.zcompdump-*
+.zsh_history
+.zsh-update
