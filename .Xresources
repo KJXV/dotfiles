@@ -1,7 +1,6 @@
 ! Font
 URxvt.font: xft:Terminus:size=9.5
 URxvt.letterSpace: -5
-=======
 URxvt.letterSpace: -1
 Xft.hinting : true
 Xft.antialias : false
