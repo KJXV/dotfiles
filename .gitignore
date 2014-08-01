@@ -57,6 +57,7 @@ Desktop
 Documents
 Downloads
 .esd_auth
+.festival_history
 fidentify.log
 .fonts.conf
 .gconf
@@ -72,17 +73,24 @@ fidentify.log
 .mate2
 .mozilla
 Music
+.npm
 Pictures
+.pki
 Podcasts
 Public
+Soundboard
 .ssh
+.Skype
+.subversion
 Templates
 .thumbnails
 .thunderbird
+tmp
 .urxvt
 Videos
 .viminfo
 .VirtualBox
+VirtualBox VMs
 .w3m
 .xsession
 .xsession-errors

@@ -257,6 +257,11 @@ statusbar = {
   };
 };
 settings = {
-  core = { real_name = "Unknown"; user_name = "kj"; nick = "kdzh"; };
+  core = {
+    real_name = "Unknown";
+    user_name = "kj";
+    nick = "kdzh";
+    hostname = "fbi.gov";
+  };
   "fe-text" = { actlist_sort = "refnum"; };
 };
