@@ -1,0 +1,28 @@
+set my_name = "KJ"
+
+# Riseup
+set folder = imaps://kj@mail.riseup.net
+set imap_user = kj
+set imap_pass =
+set spoolfile = +INBOX
+set record = +Sent
+mailboxes = +INBOX
+
+# Vim!
+set editor = vim
+
+# StartTLS
+set ssl_starttls = yes
+
+# Check for mail every 2 minutes
+set mail_check = 120
+
+# Persistent IMAP
+unset imap_passive
+set imap_keepalive = 120
+
+# Store headers locally
+set header_cache = "~/.cache/mutt"
+
+# Store messages locally
+set message_cachedir = "~/.cache/mutt"
