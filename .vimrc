@@ -16,7 +16,7 @@ execute pathogen#infect()
   " NERDTree toggles with CTRL-N
 map <C-n> :NERDTreeToggle<CR>
   " NERDTree opens if no file is specifide
-autocmd vimenter * if !argc() | NERDTree | endif
+"autocmd vimenter * if !argc() | NERDTree | endif
 
 " Theme
 set background=dark
