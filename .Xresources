@@ -17,12 +17,11 @@ Xft.antialias : false
 ! If there is no need for true transparency, or if compositing uses too
 ! many resources on your system, you can get transparency working in the
 ! following way:
-!URxvt.foreground: #6c71c4
-!URxvt.background: [33]#002b36
-!URxvt*.transparent: true
+URxvt.foreground: #6c71c4
+URxvt.background: [33]#002b36
+URxvt*.transparent: true
 ! URxvt*.shading: 0 to 99 darkens, 101 to 200 lightens
 URxvt*.shading: 33
-URxvt*.transparent: true
 ! URxvt*.shading: 0 to 99 darkens, 101 to 200 lightens
 !URxvt*.shading: 110
 
