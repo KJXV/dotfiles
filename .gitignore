@@ -46,6 +46,7 @@ Audiobooks
 .bash_history
 .bash_logout
 .bashrc
+.bitcoin
 .cache
 .cinnamon
 .cmus
@@ -82,6 +83,7 @@ Soundboard
 .ssh
 .Skype
 .subversion
+.swo
 Templates
 .thumbnails
 .thunderbird
