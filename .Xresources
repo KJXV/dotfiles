@@ -1,9 +1,68 @@
+
 ! Font
 URxvt.font: xft:Terminus:size=9.5
 URxvt.letterSpace: -5
-#URxvt.letterSpace: -1
+! URxvt.letterSpace: -1
 Xft.hinting : true
 Xft.antialias : false
+
+
+! Theme - Solarized Dark
+! https://github.com/solarized/xresources
+#define S_base03        #002b36
+#define S_base02        #073642
+#define S_base01        #586e75
+#define S_base00        #657b83
+#define S_base0         #839496
+#define S_base1         #93a1a1
+#define S_base2         #eee8d5
+#define S_base3         #fdf6e3
+#define S_yellow        #b58900
+#define S_orange        #cb4b16
+#define S_red           #dc322f
+#define S_magenta       #d33682
+#define S_violet        #6c71c4
+#define S_blue          #268bd2
+#define S_cyan          #2aa198
+#define S_green         #859900
+*background:            S_base03
+*foreground:            S_base0
+*fadeColor:             S_base03
+*cursorColor:           S_base1
+*pointerColorBackground:S_base01
+*pointerColorForeground:S_base1
+! black dark/light
+*color0:                S_base02
+*color8:                S_base03
+! red dark/light
+*color1:                S_red
+*color9:                S_orange
+! green dark/light
+*color2:                S_green
+*color10:               S_base01
+! yellow dark/light
+*color3:                S_yellow
+*color11:               S_base00
+! blue dark/light
+*color4:                S_blue
+*color12:               S_base0
+! magenta dark/light
+*color5:                S_magenta
+*color13:               S_violet
+! cyan dark/light
+*color6:                S_cyan
+*color14:               S_base1
+! white dark/light
+*color7:                S_base2
+*color15:               S_base3
+
+
+! Bold, Underline, Italicise
+! NB: These are also Solarized.
+URxvt.colorBD: #dc322f
+URxvt.colorUL: #268bd2
+URxvt.colorIT: #b58900
+
 
 ! Transparency
 ! To use true transparency, you need to be using a window manager that
@@ -14,16 +73,18 @@ Xft.antialias : false
 ! where '95' is the opacity level in percentage and '#000000' is the
 ! background color.
 !
-! If there is no need for true transparency, or if compositing uses too
-! many resources on your system, you can get transparency working in the
+! If there is no need for true transparency, if compositing uses too
+! many resources on your system, or if your window manager can't support
+! true transparency, you can get transparency working in the
 ! following way:
-URxvt.foreground: #6c71c4
-URxvt.background: [33]#002b36
-URxvt*.transparent: true
+!URxvt.foreground: #6c71c4
+!URxvt.background: [33]#002b36
+!URxvt*.transparent: true
 ! URxvt*.shading: 0 to 99 darkens, 101 to 200 lightens
-URxvt*.shading: 33
+!URxvt*.shading: 33
 ! URxvt*.shading: 0 to 99 darkens, 101 to 200 lightens
 !URxvt*.shading: 110
+
 
 ! Scrolling
 ! scrollbar style - rxvt (default), plain (most compact), next, or xterm
@@ -46,9 +107,8 @@ URxvt*scrollTtyKeypress: true
 ! scrollback history
 URxvt.saveLines : 12000
 
+
 ! Clickable URLS
 URxvt.perl-ext-common: default,matcher
 URxvt.url-launcher: /usr/bin/firefox
 URxvt.matcher.button: 1
-URxvt.colorUL: #4682B4
-URxvt.colorUL: #4682B4
