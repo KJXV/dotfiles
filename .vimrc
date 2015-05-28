@@ -2,8 +2,8 @@ set nocompatible
 
 " Keymap for Dvorak
 nnoremap h h
-nnoremap t j
-nnoremap n k
+nnoremap t gj
+nnoremap n gk
 nnoremap s l
 
 vnoremap h h
