@@ -1,87 +1,65 @@
 set nocompatible
 
-" Keymap for Dvorak
+" Keymap for Dvorak -------------------
 nnoremap h h
 nnoremap t gj
 nnoremap n gk
 nnoremap s l
 
 vnoremap h h
-vnoremap t j
-vnoremap n k
+vnoremap t gj
+vnoremap n gk
 vnoremap s l
 
-" Plugins
+" Plugins -----------------------------
 execute pathogen#infect()
   " NERDTree toggles with CTRL-N
 map <C-n> :NERDTreeToggle<CR>
   " NERDTree opens if no file is specifide
 "autocmd vimenter * if !argc() | NERDTree | endif
 
-" Theme
+" Theme -------------------------------
 set background=dark
 colorscheme solarized
 
-" When started as "evim", evim.vim will already have done these settings.
+" Globals -----------------------------
 if v:progname =~? "evim"
   finish
 endif
-
-" allow backspacing over everything in insert mode
-set backspace=indent,eol,start
-
 if has("vms")
-  set nobackup		" do not keep a backup file, use versions instead
+  set nobackup
 else
-  set backup		" keep a backup file
+  set backup
 endif
-set history=1000        " lines of command line history
-set ruler		" show the cursor position all the time
-set showcmd		" displan incomplete commands
-set incsearch		" do incremental searching
-" C-L clears highlighting of :set hlsearch
-if maparg('<C-L>', 'n') ==# ''
-  nnoremap <silent> <C-L> :nohlsearch<CR><C-L>
-endif
-set tabpagemax=50
+set autoindent
 set autoread
+set backspace=indent,eol,start
+set backupdir=~/.vim_backup
+set complete-=i
+set copyindent
+set display+=lastline
+set encoding=utf-8
+set go=c
+set history=1000
+set ignorecase
+set incsearch
 set laststatus=2
-set wildmenu
+set mouse=
+set noswapfile
+set nowrap
+set number
+set ruler
+set shiftround
+set showcmd
+set smartcase
+set smarttab
+set softtab=2 tabstop=2 shiftwidth=2
+set title
 set ttimeout
 set ttimeoutlen=50
-set scrolloff=1
-set sidescrolloff=5
-set display+=lastline
-set smarttab
-set complete-=i
-set shiftround
-
-" For Win32 GUI: remove 't' flag from 'guioptions': no tearoff menu entries
-" let &guioptions = substitute(&guioptions, "t", "", "g")
-
-" Don't use Ex mode, use Q for formatting
-map Q gq
-
-" CTRL-U in insert mode deletes a lot.  Use CTRL-G u to first break undo,
-" so that you can undo CTRL-U after inserting a line break.
-inoremap <C-U> <C-G>u<C-U>
-
-" In many terminal emulators the mouse works just fine, thus enable it.
-" if has('mouse')
-"   set mouse=a
-" endif
-
-" Switch syntax highlighting on, when the terminal has colors
-" Also switch on highlighting the last used search pattern.
-if &t_Co > 2 || has("gui_running")
-  syntax on
-  set hlsearch
-endif
-
-" Allow color schemes to do bright colors without forcing bold.
-if &t_Co == 8 && $TERM !~# '^linux'
-  set t_Co=16
-endif
+set undolevels=1000
+set wildmenu
+set wildmode=longest,list
 
 " Only do this part when compiled with support for autocommands.
 if has("autocmd")
@@ -111,10 +89,6 @@ if has("autocmd")
 
   augroup END
 
-else
-
-  set autoindent		" always set autoindenting on
-
 endif " has("autocmd")
 
 " Convenient command to see the difference between the current buffer and the
@@ -122,5 +96,31 @@ endif " has("autocmd")
 " Only define it when not defined already.
 if !exists(":DiffOrig")
   command DiffOrig vert new | set bt=nofile | r ++edit # | 0d_ | diffthis
-		  \ | wincmd p | diffthis
+      \ | wincmd p | diffthis
 endif
+
+" Switch syntax highlighting on, when the terminal has colors
+" Also switch on highlighting the last used search pattern.
+if &t_Co > 2 || has("gui_running")
+  syntax on
+  set hlsearch
+endif
+
+" Allow color schemes to do bright colors without forcing bold.
+if &t_Co == 8 && $TERM !~# '^linux'
+  set t_Co=16
+endif
+
+" Keybindings -------------------------
+
+" Don't use Ex mode, use Q for formatting
+map Q gq
+
+" C-L clears highlighting of :set hlsearch
+if maparg('<C-L>', 'n') ==# ''
+  nnoremap <silent> <C-L> :nohlsearch<CR><C-L>
+endif
+
+" CTRL-U in insert mode deletes a lot.  Use CTRL-G u to first break undo,
+" so that you can undo CTRL-U after inserting a line break.
+inoremap <C-U> <C-G>u<C-U>
