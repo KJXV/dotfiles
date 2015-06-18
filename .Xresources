@@ -1,14 +1,10 @@
-! This is only used as a configuration file for urxvt.
-
-! Font ------------------------------------------------------------------------
-URxvt.font: xft:Sauce code powerline light:size=9.5
+URxvt.font: xft:Incolsolata:size=10.5
 URxvt.letterSpace: -5
 ! URxvt.letterSpace: -1
-Xft.hinting : true
-Xft.antialias : false
+Xft.hinting:	  false
+Xft.antialias:  false
 Xft.dpi:        96
 Xft.rgba:       rgb
-Xft.hintstyle:  hintslight
 
 
 ! Theme -----------------------------------------------------------------------
@@ -54,7 +50,7 @@ URxvt*pointerColorForeground: #93a1a1
 ! background color.
 !
 ! If there is no need for true transparency, if compositing uses too
-! many resources on your system, or if your window manager can't support
+! many resources on your system, or if your window manager can\t support
 ! true transparency, you can get transparency working in the
 ! following way:
 !URxvt.foreground: #6c71c4

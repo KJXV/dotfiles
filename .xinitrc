@@ -1,5 +1,5 @@
 # Run .Xresources if X is started through startx
-[[ -f ~/.Xresources ]] && xrdb -merge ~/.Xresources
+[ -f ~/.Xresources ] && xrdb -merge ~/.Xresources
 
 # Window Managers
 xsetroot -name "kj"

@@ -53,7 +53,7 @@ set shiftround
 set showcmd
 set smartcase
 set smarttab
-set softtab=2 tabstop=2 shiftwidth=2
+set tabstop=2 shiftwidth=2
 set title
 set ttimeout
 set ttimeoutlen=50
