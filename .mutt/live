@@ -1,0 +1,12 @@
+# IMAP
+set folder = imaps://antichrist@imap-mail.outlook.com
+set imap_user = antichrist@live.com
+set imap_pass =
+set spoolfile = +INBOX
+set record = +Sent
+
+# SMTP
+set smtp_url = smtps://antichrist@smtp-mail.outlook.com
+set realname = 'KJ'
+set from = 'antichrist@live.com'
+set hostname = 

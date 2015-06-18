@@ -1,0 +1,35 @@
+# Hi, my name is
+set my_name = "KJ"
+
+# Vim!
+set editor = vim
+
+# Solarized!
+source solarized-dark-256.muttrc
+
+# Check for mail every 2 minutes
+set mail_check = 120
+
+# StartTLS
+set ssl_starttls = yes
+
+# Persistent IMAP
+unset imap_passive
+set imap_keepalive = 120
+
+# Subscribe to all folders
+set imap_check_subscribed
+
+# Store headers locally
+set header_cache = "~/.cache/mutt"
+
+# Store messages locally
+set message_cachedir = "~/.cache/mutt"
+
+# Riseup
+source "~/.mutt/riseup"
+folder-hook $folder 'source ~/.mutt/riseup'
+
+# Live
+source "~/.mutt/live"
+folder-hook $folder 'source ~/.mutt/live'

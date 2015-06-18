@@ -1,0 +1,9 @@
+# IMAP
+set folder = imaps://kj@mail.riseup.net
+set imap_user = kj
+set imap_pass =
+set spoolfile = +INBOX
+set record = +Sent
+
+# SMTP
+set smtp
