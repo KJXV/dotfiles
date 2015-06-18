@@ -68,7 +68,7 @@ URxvt*pointerColorForeground: #93a1a1
 
 ! Scrolling -------------------------------------------------------------------
 ! scrollbar style - rxvt (default), plain (most compact), next, or xterm
-URxvt.scrollstyle: rxvt
+URxvt.scrollstyle: plain
 URxvt.scrollBar : false
 
 ! By default, when shell output appears the scrollback view will
@@ -90,5 +90,5 @@ URxvt.saveLines : 12000
 
 ! Clickable URLS --------------------------------------------------------------
 URxvt.perl-ext-common: default,matcher
-URxvt.url-launcher: /usr/bin/firefox
+URxvt.url-launcher: /usr/local/bin/surf
 URxvt.matcher.button: 1

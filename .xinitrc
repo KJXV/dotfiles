@@ -2,10 +2,12 @@
 [[ -f ~/.Xresources ]] && xrdb -merge ~/.Xresources
 
 # Window Managers
-session=${1:-i3}
+xsetroot -name "kj"
+session=${1:-dwm}
 
 case $session in
-	i3|i3wm			) exec i3;;
+	dwm				) exec dwm;;
+	i3|i3wm				) exec i3;;
 	*				) exec $1;;
 esac
 
@@ -22,3 +24,4 @@ xset +fp ~/.local/share/fonts/Terminus/BDF
 xset +fp ~/.local/share/fonts/Terminus/PCF
 xset +fp ~/.local/share/fonts/UbuntuMono
 xset fp rehash
+
