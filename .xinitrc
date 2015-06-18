@@ -1,11 +1,14 @@
 # Run .Xresources if X is started through startx
 [[ -f ~/.Xresources ]] && xrdb -merge ~/.Xresources
 
+xsetroot -name "kj"
+
 # Window Managers
-session=${1:-i3}
+session=${1:-dwm}
 
 case $session in
-	i3|i3wm			) exec i3;;
+	dwm				) exec dwm;;
+	i3|i3wm				) exec i3;;
 	*				) exec $1;;
 esac
 

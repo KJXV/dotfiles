@@ -1,94 +1,29 @@
-! This is only used as a configuration file for urxvt.
-
-! Font ------------------------------------------------------------------------
-URxvt.font: xft:Sauce code powerline light:size=9.5
-URxvt.letterSpace: -5
-! URxvt.letterSpace: -1
-Xft.hinting : true
-Xft.antialias : false
-Xft.dpi:        96
-Xft.rgba:       rgb
-Xft.hintstyle:  hintslight
-
 
 ! Theme -----------------------------------------------------------------------
-! NB: These are also Solarized.
+! NB: These are Solarized.
 ! https://github.com/solarized/xresources
-URxvt.colorBD: #dc322f
-URxvt.colorUL: #268bd2
-URxvt.colorIT: #b58900
 
-URxvt*color0:  #073642
-URxvt*color8:  #002b36
-URxvt*color1:  #dc322f
-URxvt*color9:  #cb4b16
-URxvt*color2:  #859900
-URxvt*color10: #586e75
-URxvt*color3:  #b58900
-URxvt*color11: #657b83
-URxvt*color4:  #268bd2
-URxvt*color12: #839496
-URxvt*color5:  #d33682
-URxvt*color13: #6c71c4
-URxvt*color6:  #2aa198
-URxvt*color14: #93a1a1
-URxvt*color7:  #eee8d5
-URxvt*color15: #fdf6e3
+*color0:  #073642
+*color8:  #002b36
+*color1:  #dc322f
+*color9:  #cb4b16
+*color2:  #859900
+*color10: #586e75
+*color3:  #b58900
+*color11: #657b83
+*color4:  #268bd2
+*color12: #839496
+*color5:  #d33682
+*color13: #6c71c4
+*color6:  #2aa198
+*color14: #93a1a1
+*color7:  #eee8d5
+*color15: #fdf6e3
 
-URxvt*background:             #002b36
-URxvt*foreground:             #839496
-URxvt*fadeColor:              #002b36
-URxvt*cursorColor:            #93a1a1
-URxvt*pointerColorBackground: #586e75
-URxvt*pointerColorForeground: #93a1a1
+*background:             #002b36
+*foreground:             #839496
+*fadeColor:              #002b36
+*cursorColor:            #93a1a1
+*pointerColorBackground: #586e75
+*pointerColorForeground: #93a1a1
 
-
-! Transparency ----------------------------------------------------------------
-! Transparency is currently disabled because Solarized is damn pretty.
-! To use true transparency, you need to be using a window manager that
-! supports compositing or a separate compositor. 
-!
-! URxvt.depth: 32
-! URxvt.background: [95]#000000
-! where '95' is the opacity level in percentage and '#000000' is the
-! background color.
-!
-! If there is no need for true transparency, if compositing uses too
-! many resources on your system, or if your window manager can't support
-! true transparency, you can get transparency working in the
-! following way:
-!URxvt.foreground: #6c71c4
-!URxvt.background: [33]#002b36
-!URxvt*.transparent: true
-! URxvt*.shading: 0 to 99 darkens, 101 to 200 lightens
-!URxvt*.shading: 33
-! URxvt*.shading: 0 to 99 darkens, 101 to 200 lightens
-!URxvt*.shading: 110
-
-
-! Scrolling -------------------------------------------------------------------
-! scrollbar style - rxvt (default), plain (most compact), next, or xterm
-URxvt.scrollstyle: rxvt
-URxvt.scrollBar : false
-
-! By default, when shell output appears the scrollback view will
-! automatically jump to the bottom of the buffer to display new
-! output. If in cases where you want to see previous output
-! (e.g., compiler messages), set the following options.
-! do not scroll with output
-URxvt*scrollTtyOutput: false
-
-! scroll in relation to buffer (with mouse scroll or Shift+Page Up)
-URxvt*scrollWithBuffer: true
-
-! scroll back to the bottom on keypress
-URxvt*scrollTtyKeypress: true
-
-! scrollback history
-URxvt.saveLines : 12000
-
-
-! Clickable URLS --------------------------------------------------------------
-URxvt.perl-ext-common: default,matcher
-URxvt.url-launcher: /usr/bin/firefox
-URxvt.matcher.button: 1
