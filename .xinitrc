@@ -1,9 +1,8 @@
 # Run .Xresources if X is started through startx
 [[ -f ~/.Xresources ]] && xrdb -merge ~/.Xresources
 
-xsetroot -name "kj"
-
 # Window Managers
+xsetroot -name "kj"
 session=${1:-dwm}
 
 case $session in
@@ -25,3 +24,4 @@ xset +fp ~/.local/share/fonts/Terminus/BDF
 xset +fp ~/.local/share/fonts/Terminus/PCF
 xset +fp ~/.local/share/fonts/UbuntuMono
 xset fp rehash
+
