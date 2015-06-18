@@ -1,3 +1,6 @@
+[submodule ".tmux/tmux-powerline"]
+	path = .tmux/tmux-powerline
+	url = git://github.com/kjthegod/tmux-powerline.git
 [submodule ".vim/bundle/Command-T"]
 	path = .vim/bundle/Command-T
 	url = git://github.com/wincent/command-t.git
