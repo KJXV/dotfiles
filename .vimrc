@@ -20,6 +20,7 @@ map <C-n> :NERDTreeToggle<CR>
 
 " Theme -------------------------------
 set background=dark
+"let g:solarized_termcolor=256
 colorscheme solarized
 
 " Globals -----------------------------
