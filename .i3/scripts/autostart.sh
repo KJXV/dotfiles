@@ -2,5 +2,8 @@
 
 # Applications
 urxvtd &
-start-pulseaudio-x11 &
-conky &
+feh --bg-scale ~/wallpaper.png &
+
+# Keyboard
+setxkbmap -option ctrl:nocaps
+
