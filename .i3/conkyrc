@@ -9,7 +9,7 @@ pad_percents 3
 override_utf8_locale yes
 
 TEXT
-,[{"full_text": " < [${battery_percent BAT1}%] ","color": "\#9933CC"},
+,[{"full_text": " < [${battery_percent BAT1}%] ","color": "\#859900"},
 
 # Finds out if cmus is running. If it is, it provides the current artist,
 # and the current track. If cmus isn't running it outputs "Not Running"
@@ -28,10 +28,10 @@ TEXT
 #  {"full_text": " ▼ [${downspeed}] ", "color":"\#00fff2"},
   
 # Shows current memory usage with a bar
-#  {"full_text": " || [$membar] ", "color":"\#B58900"},
+  {"full_text": " || [$membar] ", "color":"\#cb4b16"},
   
 # Shows current CPU usage with a bar
-#  {"full_text": " ■ [$cpubar] ", "color":"\#00A9B5"},
+  {"full_text": " ■ [$cpubar] ", "color":"\#2aa198"},
   
 # Bar showing available entropy. Install haveged if you want this to rocket up.
 # Without, /proc/sys/kernel/random/entropy_avail reported on my sysem ~175.
@@ -39,9 +39,9 @@ TEXT
 #  {"full_text": " ~ [$entropy_bar] ", "color":"\#AFB500"},
   
 # Shows upime
-  {"full_text": " ↑ [${uptime}] ","color": "\#dc322f"},
+  {"full_text": " ↑ [${uptime}] ","color": "\b58e758"},
   
 # Shows time
-  {"full_text": " [${time %a %d %b} ${time %H:%M:%S}] ","color": "\#2fdc57"}
+  {"full_text": " O [${time %a %d %b} ${time %H:%M:%S}] ","color": "\#6c71c4"}
   
 ]
