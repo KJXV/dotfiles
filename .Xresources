@@ -1,5 +1,5 @@
-URxvt.font: xft:Incolsolata:size=10.5
-URxvt.letterSpace: -5
+URxvt.font: xft:Inconsolata:size=10.5
+URxvt.letterSpace: 1
 ! URxvt.letterSpace: -1
 Xft.hinting:	  false
 Xft.antialias:  false
@@ -64,7 +64,7 @@ URxvt*pointerColorForeground: #93a1a1
 
 ! Scrolling -------------------------------------------------------------------
 ! scrollbar style - rxvt (default), plain (most compact), next, or xterm
-URxvt.scrollstyle: plain
+URxvt.scrollstyle: rxvt
 URxvt.scrollBar : false
 
 ! By default, when shell output appears the scrollback view will
@@ -83,8 +83,3 @@ URxvt*scrollTtyKeypress: true
 ! scrollback history
 URxvt.saveLines : 12000
 
-
-! Clickable URLS --------------------------------------------------------------
-URxvt.perl-ext-common: default,matcher
-URxvt.url-launcher: /usr/local/bin/surf
-URxvt.matcher.button: 1
